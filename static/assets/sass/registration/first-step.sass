@@ -1,0 +1,349 @@
+@import "../colors"
+@import "../fonts"
+
+.gradient-wrapper
+	background-image: linear-gradient(45deg, #fda889 0%, #fcd96e 100%)
+
+input
+	&::-webkit-input-placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+	&:-ms-input-placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+	&::-ms-input-placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+	&::placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+
+.logo
+	margin-top: 35px
+	a
+		color: $white
+		font-family: $Avenir
+		font-size: 36px
+		font-weight: 700
+
+.languages-reg
+	margin: 35px 0 0 0
+	text-align: right
+	font-family: $Avenir
+	font-size: 24px
+	font-weight: 700
+	color: $white
+	cursor: pointer
+	&_select
+		position: absolute
+		right: 10px
+		z-index: 999
+		li
+			margin-top: 10px
+		a
+			font-weight: 400
+		span
+			width: 21px
+			height: 12px
+			position: absolute
+			transition: 0.5s
+
+.tagline
+	margin: 75px 0 60px
+	text-align: center
+	h2
+		color: $white
+		font-family: $Avenir
+		font-size: 48px
+		font-weight: 700
+
+.registration
+	width: 889px
+	margin: 0 auto 100px
+	padding-bottom: 86px
+	background-color: $white
+	box-shadow: 0 2px 25px rgba(0, 0, 0, 0.25)
+	border-radius: 15px
+	&-title
+		padding-top: 48px
+		text-align: center
+		h1
+			font-family: $Avenir
+			color: $text-color
+			font-size: 36px
+			font-weight: 700
+	&-form
+		margin-top: 70px
+		padding-left: 197px
+		p
+			display: inline-block
+			width: 149px
+			margin: 0 44px 35px 0
+			color: $text-color
+			font-family: $Avenir
+			font-size: 20px
+			line-height: 24px
+		input
+			width: 379px
+			border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+			color: $text-color
+			font-family: $Avenir
+			font-size: 18px
+
+.phone
+	position: absolute
+	top: 16px
+	right: 190px
+	max-width: 220px
+
+select
+	width: 379px
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+	color: $place-holder
+	font-family: $Avenir
+	font-size: 18px
+	line-height: 1.4
+	cursor: pointer
+	background: url(../../../img/registration/down-arrow.png) no-repeat center right
+	option
+		
+
+.chose-language
+	display: block
+	margin-top: -20px
+	margin-left: 200px
+	font-family: $Avenir
+	color: $place-holder
+
+.radio-btn
+	width: 100%
+	margin: 50px 0 0 0
+
+.radio
+	position: absolute
+	z-index: -1
+	opacity: 0
+	margin: 10px 0 0 7px
+
+#radio2
+	margin: 5px 0 0 7px
+
+.radio 
+	&+label
+		position: relative
+		padding: 0 0 0 35px
+		cursor: pointer
+
+.radio 
+	&+label
+		&:before
+			content: ''
+			position: absolute
+			top: 0px
+			left: 0
+			width: 20px
+			height: 20px
+			border: 1px solid #578fd3
+			border-radius: 50%
+			background: $white
+
+.radio
+	&+label
+		&:after
+			content: ''
+			position: absolute
+			top: 4px
+			left: 4px
+			width: 12px
+			height: 12px
+			border-radius: 50%
+			background-color: #578fd3
+			opacity: 0
+			transition: .2s
+
+.radio
+	&:checked
+		&+label
+			&:after
+				opacity: 1
+
+label
+	color: $text-color
+	font-family: $Avenir-reg
+	font-size: 18px
+	margin-right: 80px
+
+.submit-btn
+	input
+		width: 264px !important
+		height: 56px
+		border-radius: 28px
+		border: 2px solid $register-color
+		background-color: $register-color
+		text-align: center
+		color: $white !important
+		font-size: 24px	!important
+		margin-top: 30px
+		margin-left: 120px
+
+.privacy-policy
+	margin-top: 44px
+	p
+		text-align: center
+		font-family: $Avenir-reg
+		font-size: 14px
+		color: $text-color
+	a
+		color: $privacy-color
+
+
+@media (min-height: 1000px)
+	.gradient-wrapper
+		height: 100vh
+
+@media (max-width: 991px)
+	.tagline
+		h2
+			font-size: 42px
+
+	.registration
+		width: 700px
+		&-form
+			padding-left: 100px
+
+	.phone
+		right: 100px
+
+	.radio
+		max-width: 100px
+
+@media (max-width: 767px)
+	.logo
+		text-align: center
+
+	.languages-reg
+		text-align: center
+		&_select
+			position: static
+
+	.tagline
+		h2
+			font-size: 36px
+
+	.registration-title
+		h1
+			font-size: 28px
+
+	.registration
+		width: 100%
+		&-form
+			margin-top: 30px
+			padding-left: 50px
+			p
+				width: 100%
+				margin: 0 0 20px 0
+			input
+				margin-bottom: 25px
+
+	select
+		margin-bottom: 20px
+
+	.chose-language
+		margin-top: -10px
+		margin-left: 0
+
+	label
+		display: block
+		margin-bottom: 40px
+
+	.phone
+		top: inherit
+		bottom: 0
+		right: 80px
+		margin-bottom: 0 !important
+
+	.submit-btn
+		input
+			margin-left: 80px
+
+	.privacy-policy
+		margin-top: 10px
+
+@media (max-width: 575px)
+	.phone
+		position: static
+		margin-top: 1px
+
+	.select-phone
+		select
+			position: static
+			float: left
+			margin-right: 30px
+
+@media (max-width: 490px)
+	.tagline
+		h2
+			font-size: 28px
+
+	.registration-title
+		h1
+			font-size: 26px
+
+	.registration
+		&-form
+			padding-left: 10px
+			p
+				font-size: 18px
+			input
+				font-size: 16px
+				width: 90%
+			select
+				font-size: 16px
+
+	.submit-btn
+		width: 100%
+		text-align: center
+		input
+			margin: 30px 0 !important
+
+	select
+		width: 90%
+
+	.phone
+		max-width: 55% !important
+
+@media (max-width: 385px)
+	.phone
+		width: 40% !important
+
+	.tagline
+		h2
+			font-size: 24px
+
+	.registration-title
+		padding-top: 30px
+		h1
+			font-size: 22px
+
+
+@font-face
+	font-family: 'Avenir-Medium'
+	src: url('../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot')
+	src: url('../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../../../fonts/Avenir-medium/AvenirNextCyr-Medium.woff') format('woff'),
+	url('../../../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'Avenir-Regular'
+	src: url('../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot')
+	src: url('../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../../../fonts/Avenir-regular/AvenirNextCyr-Regular.woff') format('woff'),
+	url('../../../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal

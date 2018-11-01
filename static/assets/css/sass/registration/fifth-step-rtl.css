@@ -1,0 +1,238 @@
+*{
+  unicode-bidi: bidi-override;
+}
+
+input::-webkit-input-placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+input:-ms-input-placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+input::-ms-input-placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+input::placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+.progres-line {
+  width: 740px;
+  margin: 50px auto 0;
+  text-align: center; }
+  .progres-line hr {
+    margin: 0 auto;
+    border: none;
+    width: 730px;
+    height: 2px;
+    color: #d4d4d4;
+    background-color: #d4d4d4; }
+  .progres-line ul {
+    margin-top: -18px; }
+  .progres-line li {
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #d4d4d4;
+    background-color: #d4d4d4;
+    text-align: center;
+    padding-top: 7px;
+    font-family: "Avenir-Medium";
+    font-size: 16px;
+    color: #fff; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-right: 200px; }
+  .progres-line span {
+    position: absolute;
+    right: -40px;
+    bottom: -70px;
+    width: 114px;
+    height: 50px;
+    color: #4a4a4a;
+    font-family: "Avenir-Regular";
+    font-size: 18px; }
+
+.active {
+  background-color: #ffc600 !important;
+  border: 1px solid #fff !important; }
+
+.this-page {
+  font-weight: 700; }
+
+.page-title {
+  margin-top: 180px;
+  margin-bottom: 130px;
+  text-align: center;
+  color: #4a4a4a; }
+  .page-title h1 {
+    font-family: "Avenir-Medium";
+    font-size: 36px;
+    font-weight: 700; }
+  .page-title p {
+    margin-top: 5px;
+    font-family: "Avenir-Regular";
+    font-size: 20px; }
+
+.pay-info {
+  width: 560px;
+  margin: 0 auto;
+  color: #4a4a4a; }
+  .pay-info p {
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 32px;
+    width: 129px;
+    font-family: "Avenir-Medium";
+    font-size: 20px;
+    line-height: 24px; }
+  .pay-info input {
+    width: 360px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-family: "Avenir-Medium";
+    font-size: 18px;
+    color: #4a4a4a; }
+    .pay-info input[type=password] {
+      width: 76px; }
+  .pay-info select {
+    font-family: "Avenir-Medium";
+    font-size: 18px;
+    color: #4a4a4a;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background: url(../../../img/registration/down-arrow.png) no-repeat left center;
+    cursor: pointer; }
+
+.field-note {
+  display: block;
+  margin: -20px 185px 0 0;
+  font-family: "Avenir-Medium";
+  font-size: 14px;
+  color: #9b9b9b; }
+
+input[type="submit"] {
+  width: 264px;
+  height: 56px;
+  display: block;
+  margin: 90px auto 110px;
+  border-radius: 28px;
+  border: 2px solid #3eb1fd;
+  background-color: #3eb1fd;
+  color: #fff;
+  font-size: 24px; }
+
+@media (max-width: 1199px) {
+  .progres-line hr {
+    width: 600px; }
+  .progres-line li:nth-of-type(n+2) {
+    margin-right: 156px; } }
+
+@media (max-width: 991px) {
+  .progres-line {
+    padding-right: 30px; } }
+
+@media (max-width: 767px) {
+  .progres-line {
+    width: 100%;
+    text-align: right;
+    padding: 0; }
+    .progres-line hr {
+      width: 100%; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-right: 123.3px; }
+    .progres-line span {
+      font-size: 16px; }
+  .page-title {
+    margin-bottom: 80px; }
+    .page-title h1 {
+      font-size: 32px; }
+    .page-title p {
+      font-size: 18px; }
+  .pay-info {
+    width: 100%; }
+    .pay-info p {
+      font-size: 18px; }
+    .pay-info input {
+      width: 320px;
+      font-size: 16px; }
+  input[type="submit"] {
+    width: 264px;
+    font-size: 24px; } }
+
+@media (max-width: 575px) {
+  .progres-line {
+    margin: 50px auto 0;
+    padding-right: 0px;
+    max-width: 420px; }
+    .progres-line hr {
+      width: 400px; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-right: 90px; }
+    .progres-line span {
+      width: 80px;
+      font-size: 14px;
+      right: -25px;
+      bottom: -60px; }
+  .page-title {
+    margin-top: 140px;
+    margin-bottom: 50px; }
+    .page-title h1 {
+      font-size: 26px; }
+    .page-title p {
+      font-size: 16px; }
+  .pay-info p {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px; }
+  .pay-info input {
+    margin-bottom: 30px;
+    width: 100%; }
+  .field-note {
+    margin: -20px 0 0 0; }
+  input[type="submit"] {
+    width: 264px;
+    font-size: 24px;
+    margin-bottom: 50px; } }
+
+@media (max-width: 450px) {
+  .progres-line {
+    max-width: 320px; }
+    .progres-line hr {
+      width: 300px; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-right: 58px; }
+    .progres-line span {
+      font-size: 0; }
+  .page-title {
+    margin-top: 80px; } }
+
+@media (max-width: 360px) {
+  .progres-line hr {
+    width: 260px; }
+  .progres-line li:nth-of-type(n+2) {
+    margin-right: 50px; }
+  .pay-info input[type=password] {
+    width: 60px; }
+  .phone {
+    width: 60%; } }
+
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot");
+  src: url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.woff") format("woff"), url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir-Regular';
+  src: url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot");
+  src: url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.woff") format("woff"), url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

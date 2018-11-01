@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load static %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>2 step</title>
+		<!-- Reser browser styles -->
+		<link href="{% static "assets/css/custom-reset.css" %}" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="{% static "assets/css/bootstrap-grid.min.css" %}" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="{% static "assets/css/sass/registration/third-step.css" %}" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="progres-line">
+						<hr>
+						<ul>
+							<li class="active">1<span>Контакты</span></li>
+							<li class="active">2<span class="this-page">Персональная информация <br> и способ доставки</span></li>
+							<li>3<span>Документы</span></li>
+							<li>4<span>Платежная информация</span></li>
+						</ul>
+					</div><!-- /.progres-line -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-title">
+						<h1>Персональная информация и данные про автомобиль</h1>
+						<p>Во время заказа клиент видит только ваше имя и информацию о машине</p>
+					</div><!-- /.page-title -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form">
+						<form action="/registration/third-step" method="post">
+							{% csrf_token %}
+							<input type="hidden" name="local" value="ru">
+							<input type="hidden" name="id" value="{{ id }}">
+							<p>Дата рождения:</p> <input type="text" placeholder="01-02-1989" required name="birth">
+							<br>
+							<p>Марка автомобиля:</p> <input type="text" required placeholder="BMW" name="car-manufactore">
+							<!-- <span class="field-note">If you haven’t found your car model at the list, contact us via email <a href="mailto:pick2me@gmail.com">pick2me@gmail.com</a></span> -->
+							<br>
+							<p>Номер автомобиля:</p> <input type="text" required placeholder="AA 111 AA" name="car-number">
+							<br>
+							<p>Год выпуска:</p> <input type="text" required placeholder="2018" name="car-year">
+							<br>
+							<p>Водительское удостоверение:</p> <input type="text" placeholder="AB234234" required  name="drive-license">
+							<div class="have-license">
+								<input type="checkbox" class="checkbox" id="checkbox" checked>
+								<label for="checkbox">У меня нет лицензии таксиста</label>
+							</div><!-- /.have-license -->
+							<div class="taxi-license">
+								<p class="taxi-license_text">У меня нет транспортной лицензии</p> <input type="text" placeholder="TA012345" name="taxi-license">
+								<span class="field-note">Номер лицензии таксиста</span>
+							</div><!-- /.taxi-license -->
+							<input type="submit" value="Далее">
+						</form>
+					</div><!-- /.form -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+	<script src="{% static "assets/js/main.js" %}"></script>
+	</body>
+</html>

@@ -1,0 +1,315 @@
+input::-webkit-input-placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+input:-ms-input-placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+input::-ms-input-placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+input::placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+.progres-line {
+  width: 740px;
+  margin: 50px auto 0;
+  text-align: center; }
+  .progres-line hr {
+    margin: 0 auto;
+    border: none;
+    width: 730px;
+    height: 2px;
+    color: #d4d4d4;
+    background-color: #d4d4d4; }
+  .progres-line ul {
+    margin-top: -18px; }
+  .progres-line li {
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #d4d4d4;
+    background-color: #d4d4d4;
+    text-align: center;
+    padding-top: 7px;
+    font-family: "Avenir-Medium";
+    font-size: 16px;
+    color: #fff; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-left: 200px; }
+  .progres-line span {
+    position: absolute;
+    left: -40px;
+    bottom: -70px;
+    width: 114px;
+    height: 50px;
+    color: #4a4a4a;
+    font-family: "Avenir-Regular";
+    font-size: 18px; }
+
+.active {
+  background-color: #ffc600 !important;
+  border: 1px solid #fff !important; }
+  .active span {
+    width: 156px !important;
+    left: -60px; }
+
+.this-page {
+  font-weight: 700; }
+
+.page-title {
+  margin-top: 180px;
+  margin-bottom: 130px;
+  text-align: center;
+  color: #4a4a4a; }
+  .page-title h1 {
+    font-family: "Avenir-Medium";
+    font-size: 36px;
+    font-weight: 700; }
+  .page-title p {
+    margin-top: 5px;
+    font-family: "Avenir-Regular";
+    font-size: 20px; }
+
+.form {
+  width: 560px;
+  margin: 0 auto;
+  color: #4a4a4a; }
+  .form p {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    width: 122px;
+    font-family: "Avenir-Medium";
+    font-size: 20px;
+    line-height: 24px; }
+  .form input {
+    width: 379px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-family: "Avenir-Medium";
+    font-size: 18px;
+    color: #4a4a4a; }
+
+.field-note {
+  display: block;
+  margin: -20px 0 12px 175px;
+  font-family: "Avenir-Medium";
+  font-size: 14px;
+  color: #9b9b9b; }
+  .field-note a {
+    color: #3eb1fd; }
+
+.have-license {
+  text-align: center;
+  margin-top: 57px; }
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px; }
+
+.checkbox + label {
+  position: relative;
+  padding: 0 0 0 52px;
+  cursor: pointer; }
+
+.checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9b9b9b;
+  border-radius: 3px;
+  background: #fff; }
+
+.checkbox:checked + label:before {
+  background: url(../../../img/registration/check.png) no-repeat center;
+  border-color: #4d92f4; }
+
+label {
+  font-family: "Avenir-Medium";
+  font-size: 20px;
+  color: #4a4a4a; }
+
+.taxi-license {
+  margin-top: 60px; }
+  .taxi-license_text {
+    max-width: 90px;
+    margin-right: 84px !important; }
+
+input[type="submit"] {
+  width: 264px;
+  height: 56px;
+  display: block;
+  margin: 60px auto 110px;
+  border-radius: 28px;
+  border: 2px solid #3eb1fd;
+  background-color: #3eb1fd;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Avenir-Medium"; }
+
+.languages-reg {
+  width: 178px;
+  height: 48px;
+  margin: 0 auto 80px;
+  padding: 12px 0 0 30px;
+  border-radius: 29px;
+  border: 1px solid #979797;
+  color: #9b9b9b;
+  font-size: 24px;
+  font-family: "Avenir-Regular";
+  cursor: pointer;
+  position: relative; }
+  .languages-reg span {
+    width: 14px;
+    height: 9px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: url(../../../img/registration/down-arrow.png);
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .languages-reg_select {
+    position: absolute;
+    top: 50px; }
+    .languages-reg_select li {
+      padding-top: 10px; }
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+@media (max-width: 1199px) {
+  .progres-line hr {
+    width: 600px; }
+  .progres-line li:nth-of-type(n+2) {
+    margin-left: 156px; } }
+
+@media (max-width: 991px) {
+  .progres-line {
+    padding-left: 30px; } }
+
+@media (max-width: 767px) {
+  .progres-line {
+    width: 100%;
+    text-align: left;
+    padding: 0; }
+    .progres-line hr {
+      width: 100%; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-left: 123.3px; }
+    .progres-line span {
+      font-size: 16px; }
+  .page-title {
+    margin-bottom: 80px; }
+    .page-title h1 {
+      font-size: 32px; }
+    .page-title p {
+      font-size: 18px; }
+  .form p {
+    font-size: 18px; }
+  .form input {
+    width: 320px;
+    font-size: 16px; }
+  input[type="submit"] {
+    width: 264px;
+    font-size: 24px; }
+  label {
+    font-size: 18px; }
+  .checkbox + label:before {
+    top: 0; } }
+
+@media (max-width: 575px) {
+  .progres-line {
+    margin: 50px auto 0;
+    padding-left: 0px;
+    max-width: 420px; }
+    .progres-line hr {
+      width: 400px; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-left: 90px; }
+    .progres-line span {
+      width: 80px;
+      font-size: 14px;
+      left: -25px;
+      bottom: -60px; }
+  .active span {
+    left: -60px; }
+  .page-title {
+    margin-top: 140px;
+    margin-bottom: 0px; }
+    .page-title h1 {
+      font-size: 26px; }
+    .page-title p {
+      font-size: 16px; }
+  .have-license {
+    min-width: 100%; }
+  .taxi-license_text {
+    max-width: 100%;
+    margin-right: 0 !important; }
+  .checkbox {
+    max-width: 300px; }
+  form {
+    max-width: 100%; }
+  .form {
+    max-width: 100%;
+    margin-top: 50px; }
+    .form p {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 18px; }
+    .form input {
+      width: 100%;
+      margin-bottom: 25px; }
+  .field-note {
+    margin-left: 0; }
+  input[type="submit"] {
+    width: 264px;
+    font-size: 24px;
+    margin-bottom: 50px; } }
+
+@media (max-width: 450px) {
+  .progres-line {
+    max-width: 320px; }
+    .progres-line hr {
+      width: 300px; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-left: 58px; }
+    .progres-line span {
+      font-size: 0; } }
+
+@media (max-width: 350px) {
+  .progres-line hr {
+    width: 260px; }
+  .progres-line li:nth-of-type(n+2) {
+    margin-left: 50px; } }
+
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot");
+  src: url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.woff") format("woff"), url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir-Regular';
+  src: url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot");
+  src: url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.woff") format("woff"), url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

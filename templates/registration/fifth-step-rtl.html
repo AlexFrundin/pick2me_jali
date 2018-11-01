@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+	<head>
+		{% load static %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>5 step</title>
+		<!-- Reser browser styles -->
+		<link href="{% static "assets/css/custom-reset.css" %}" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="{% static "assets/css/bootstrap-grid.min.css" %}" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="{% static "assets/css/sass/registration/fifth-step-rtl.css" %}" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="progres-line">
+						<hr>
+						<ul>
+							<li class="active">1<span>Contacts</span></li>
+							<li class="active">2<span>Personal info and vehicle details</span></li>
+							<li class="active">3<span>Documents</span></li>
+							<li class="active">4<span class="this-page">Payment info</span></li>
+						</ul>
+					</div><!-- /.progres-line -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-title">
+						<h1>Payment info</h1>
+						<p>Payment is possible only after the payment data is provided</p>
+					</div><!-- /.page-title -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="pay-info">
+						<form action="/registration/fifth-step" method="post">
+							{% csrf_token %}
+              <input type="hidden" name="local" value="rtl">
+							<input type="hidden" name="id" value="{{ id }}">
+							<p>Card number:</p> <input type="text"  name="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required>
+							<p>Cardholder:</p> <input type="text" name="card-holder"placeholder="John Doe" required>
+							<span class="field-note">Last Name and Name of the Cardholder.</span>
+							<br>
+							<input type="submit" value="Next">
+						</form>
+					</div><!-- /.pay-info -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+	<script src="{% static "assets/js/main.js" %}"></script>
+	</body>
+</html>

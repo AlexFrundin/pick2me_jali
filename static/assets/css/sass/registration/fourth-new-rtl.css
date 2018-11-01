@@ -1,0 +1,313 @@
+*{
+  unicode-bidi: bidi-override;
+}
+
+.progres-line {
+  width: 740px;
+  margin: 50px auto 0;
+  text-align: center; }
+  .progres-line hr {
+    margin: 0 auto;
+    border: none;
+    width: 730px;
+    height: 2px;
+    color: #d4d4d4;
+    background-color: #d4d4d4; }
+  .progres-line ul {
+    margin-top: -18px; }
+  .progres-line li {
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #d4d4d4;
+    background-color: #d4d4d4;
+    text-align: center;
+    padding-top: 7px;
+    font-family: "Avenir-Medium";
+    font-size: 16px;
+    color: #fff; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-right: 200px; }
+  .progres-line span {
+    position: absolute;
+    right: -40px;
+    bottom: -70px;
+    width: 114px;
+    height: 50px;
+    color: #4a4a4a;
+    font-family: "Avenir-Regular";
+    font-size: 18px; }
+
+.active {
+  border: 1px solid #fff !important;
+  background-color: #ffc600 !important; }
+
+.this-page {
+  font-weight: 700; }
+
+.page-title {
+  max-width: 609px;
+  margin: 180px auto 90px;
+  text-align: center;
+  color: #4a4a4a; }
+  .page-title h1 {
+    font-family: "Avenir-Medium";
+    font-size: 36px;
+    font-weight: 700; }
+  .page-title p {
+    margin-top: 10px;
+    font-family: "Avenir-Regular";
+    font-size: 20px; }
+
+.documents-block {
+  width: 889px;
+  height: 228px;
+  margin: 0 auto 44px;
+  padding: 24px;
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  position: relative; }
+  .documents-block span {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-family: "Avenir-Medium";
+    font-size: 14px;
+    color: #ff4b4b; }
+  .documents-block h4 {
+    margin-bottom: 10px;
+    font-family: "Avenir-Medium";
+    font-size: 24px;
+    color: #4a4a4a; }
+  .documents-block p {
+    max-width: 694px;
+    font-family: "Avenir-Regular";
+    font-size: 18px;
+    color: #4a4a4a;
+    line-height: 1.5; }
+  .documents-block select {
+    width: 85px;
+    margin-left: 16px;
+    padding-right: 11px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background: url(../../../img/registration/down-arrow.png) no-repeat left center;
+    font-family: "Avenir-Medium";
+    font-size: 18px;
+    color: #9b9b9b;
+    cursor: pointer; }
+  .documents-block_upload {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    width: 223px;
+    height: 56px;
+    padding-top: 12px;
+    border-radius: 28px;
+    border: 2px solid #3eb1fd;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer; }
+    .documents-block_upload b {
+      font-family: "Avenir-Medium";
+      font-size: 24px;
+      color: #3eb1fd;
+      overflow: hidden; }
+    .documents-block_upload input {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      cursor: pointer; }
+
+.documents-btn {
+  margin-top: 170px;
+  margin-bottom: 112px;
+  text-align: center; }
+  .documents-btn input {
+    width: 264px;
+    height: 56px;
+    border-radius: 28px;
+    border: 2px solid #3eb1fd;
+    background-color: #3eb1fd;
+    font-family: "Avenir-Medium";
+    font-size: 24px;
+    color: #fff; }
+
+.new-upload {
+  background-color: #3eb1fd;
+  padding-top: 18px;
+  padding-left: 35px;
+  text-align: left; }
+  .new-upload b {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Avenir-Regular"; }
+    .new-upload b:before {
+      content: '';
+      position: absolute;
+      top: 13px;
+      right: 25px;
+      width: 35px;
+      height: 28px;
+      background: url(../../../img/registration/mg.png); }
+
+.expiration-date {
+  display: inline-block;
+  margin: 47px 0 0 24px;
+  font-family: "Avenir-Medium" !important; }
+
+.languages-reg {
+  width: 178px;
+  height: 48px;
+  margin: 0 auto 80px;
+  padding: 12px 30px 0 0;
+  border-radius: 29px;
+  border: 1px solid #979797;
+  color: #9b9b9b;
+  font-size: 24px;
+  font-family: "Avenir-Regular";
+  cursor: pointer;
+  position: relative; }
+  .languages-reg span {
+    width: 14px;
+    height: 9px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: url(../../../img/registration/down-arrow.png);
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .languages-reg_select {
+    position: absolute;
+    top: 50px; }
+    .languages-reg_select li {
+      padding-top: 10px; }
+
+.rotate {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+@media (max-width: 1199px) {
+  .progres-line hr {
+    width: 600px; }
+  .progres-line li:nth-of-type(n+2) {
+    margin-right: 156px; } }
+
+@media (max-width: 991px) {
+  .progres-line {
+    padding-right: 30px; }
+  .documents-block {
+    width: 100%;
+    height: 250px; } }
+
+@media (max-width: 767px) {
+  .progres-line {
+    width: 100%;
+    text-align: right;
+    padding: 0; }
+    .progres-line hr {
+      width: 100%; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-right: 123.3px; }
+    .progres-line span {
+      font-size: 16px; }
+  .page-title {
+    margin-bottom: 80px; }
+    .page-title h1 {
+      font-size: 32px; }
+    .page-title p {
+      font-size: 18px; }
+  .documents-block select {
+    width: 70px; } }
+
+@media (max-width: 575px) {
+  .progres-line {
+    margin: 50px auto 0;
+    padding-right: 0px;
+    max-width: 420px; }
+    .progres-line hr {
+      width: 400px; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-right: 90px; }
+    .progres-line span {
+      width: 80px;
+      font-size: 14px;
+      right: -25px;
+      bottom: -60px; }
+  .page-title {
+    margin-top: 140px;
+    margin-bottom: 50px; }
+    .page-title h1 {
+      font-size: 26px; }
+    .page-title p {
+      font-size: 16px; }
+  .documents-block {
+    height: 100%; }
+    .documents-block h4 {
+      font-size: 20px; }
+    .documents-block p {
+      font-size: 16px; }
+    .documents-block select {
+      font-size: 16px; }
+    .documents-block_upload {
+      position: relative;
+      margin-top: 40px;
+      margin-right: auto;
+      padding-top: 15px;
+      padding-left: 15px; }
+      .documents-block_upload b {
+        font-size: 20px; } }
+
+@media (max-width: 490px) {
+  .expiration-date {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .documents-btn {
+    margin-top: 100px; } }
+
+@media (max-width: 450px) {
+  .progres-line {
+    max-width: 320px; }
+    .progres-line hr {
+      width: 300px; }
+    .progres-line li:nth-of-type(n+2) {
+      margin-right: 58px; }
+    .progres-line span {
+      font-size: 0; }
+  .page-title {
+    margin-top: 80px; }
+  .documents-block_upload {
+    margin: 40px auto 0; }
+    .documents-block_upload b {
+      font-size: 20px; } }
+
+@media (max-width: 360px) {
+  .progres-line hr {
+    width: 260px; }
+  .progres-line li:nth-of-type(n+2) {
+    margin-right: 50px; }
+  .documents-block select {
+    width: 60px;
+    margin-left: 10px; } }
+
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot");
+  src: url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.woff") format("woff"), url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir-Regular';
+  src: url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot");
+  src: url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.woff") format("woff"), url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

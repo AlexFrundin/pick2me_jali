@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load static %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>2 step</title>
+		<!-- Reser browser styles -->
+		<link href="{% static "assets/css/custom-reset.css" %}" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="{% static "assets/css/bootstrap-grid.min.css" %}" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="{% static "assets/css/sass/registration/second-step.css" %}" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="progres-line">
+						<hr>
+						<ul>
+							<li class="active">1<span>Contacts</span></li>
+							<li class="active">2<span class="this-page">Personal info <br> and vehicle details</span></li>
+							<li>3<span>Documents</span></li>
+							<li>4<span>Payment info</span></li>
+						</ul>
+					</div><!-- /.progres-line -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-title">
+						<h1>Personal info and vehicle details</h1>
+						<p>During the order client sees only your name and car info</p>
+					</div><!-- /.page-title -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form">
+						<form action="/registration/second-step" method="post">
+							{% csrf_token %}
+							<input type="hidden" name="local" value="eng">
+							<input type="hidden" name="id" value="{{ id }}">
+							<p>Date of birth:</p> <input type="text" required placeholder="01-02-1989" name="birth">
+							<br>
+							<p>Vehicle:</p> <select name="vehicle" id="">
+								<option value="Metro" selected>Metro</option>
+								<option value="Bus">Bus</option>
+							</select>
+							<span class="field-note">Please specify the type of transport on which you will perform delivery.</span>
+							<br>
+							<input type="submit" value="Next">
+						</form>
+					</div><!-- /.form -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+	<script src="{% static "assets/js/main.js" %}"></script>
+	</body>
+</html>

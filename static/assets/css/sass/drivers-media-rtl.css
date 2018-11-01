@@ -1,0 +1,285 @@
+@media (max-width: 991px) {
+  .logo-text a {
+    font-size: 30px; }
+  .clients-page {
+    margin-top: 28px; }
+    .clients-page a {
+      font-size: 20px; }
+  .drivers-page {
+    padding-top: 0; }
+    .drivers-page a {
+      font-size: 20px; }
+  .register {
+    margin-top: 32px; }
+    .register a {
+      font-size: 18px; }
+  .languages {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: -20px; }
+    .languages-select {
+      padding-left: 0px; }
+      .languages-select span {
+        left: -80px; }
+    .languages-content {
+      left: -25px; }
+  .city-taxi {
+    margin-top: 40px; }
+    .city-taxi img {
+      max-width: 150%;
+      height: auto; }
+  .taxi-description {
+    margin-top: 60px; }
+    .taxi-description h2 {
+      font-size: 30px; }
+    .taxi-description p {
+      font-size: 16px; }
+  .taxi-app {
+    margin-top: 100px; }
+  .app-description h2 {
+    font-size: 30px; }
+  .app-description p {
+    font-size: 16px; }
+  .conditions {
+    margin-top: 100px; }
+    .conditions-block {
+      margin-bottom: 30px; }
+      .conditions-block p {
+        max-width: 340px;
+        margin: 0 auto; }
+  .title h3 {
+    font-size: 30px; }
+  .manual {
+    margin-top: 50px; }
+    .manual-title h3 {
+      font-size: 30px; }
+  .tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .mobile-slider {
+    position: inherit;
+    opacity: 1; }
+  .desktop {
+    display: none; }
+  .car-phone {
+    margin-top: -120px; }
+    .car-phone img {
+      max-width: 100%; }
+  .download-info a:nth-of-type(2) {
+    margin-right: 20px; }
+  .support {
+    margin-bottom: 50px; }
+    .support-title h3 {
+      font-size: 30px; }
+    .support-blocks {
+      margin-bottom: 30px; }
+      .support-blocks p {
+        max-width: 340px;
+        margin: 0 auto; }
+  .last-list {
+    margin: 0 auto; }
+  .footer-logo a {
+    font-size: 24px; }
+  .footer-languages {
+    margin-top: 0px; }
+    .footer-languages .languages-content {
+      position: static;
+      margin-left: 0;
+      left: 0; }
+  .footer-menu_list {
+    margin-top: 30px; }
+    .footer-menu_list li:nth-of-type(1) {
+      font-size: 20px; } }
+
+@media (max-width: 767px) {
+  .burger-menu {
+    margin-top: 17px; }
+  .line {
+    margin-right: auto;
+    width: 32px;
+    height: 3px;
+    background-color: #4a4a4a;
+    margin-bottom: 6px; }
+  .desktop-mob {
+    display: none; }
+  .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+  .logo-text a {
+    font-size: 20px; }
+  .city-taxi img {
+    position: static;
+    max-width: 100%; }
+  .taxi-mob_title {
+    font-family: "Avenir-Medium";
+    color: #4a4a4a;
+    text-align: center; }
+    .taxi-mob_title h2 {
+      font-size: 24px; }
+  .taxi-description {
+    margin-bottom: 0; }
+    .taxi-description p {
+      padding-top: 30px;
+      clear: both; }
+  .taxi-app {
+    margin-top: 50px; }
+  .taxi-app_image {
+    margin-bottom: 25px; }
+    .taxi-app_image img {
+      position: static;
+      max-width: 100%; }
+  .app-description h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 26px; }
+  .app-description a {
+    margin: 58px auto; }
+  .title h3 {
+    font-size: 24px; }
+  .conditions-block h5 {
+    font-size: 18px; }
+  .conditions-block p {
+    font-size: 16px; }
+  .manual-title h3 {
+    font-size: 24px; }
+  .manual-steps_mobile h4 {
+    font-size: 18px;
+    margin-right: 35px; }
+  .manual-steps_mobile p {
+    margin-right: 35px;
+    font-size: 14px;
+    max-width: 170px; }
+  .manual-steps_mobile img {
+    max-width: 213px; }
+  .download-info {
+    text-align: center; }
+    .download-info h3 {
+      font-size: 24px; }
+    .download-info a {
+      margin: 40px auto; }
+  .car-phone {
+    margin-top: -80px; }
+    .car-phone img {
+      margin: 0 auto;
+      max-width: 256px; }
+  .support-title h3 {
+    font-size: 24px; }
+  .support-blocks h6 {
+    font-size: 18px; }
+  .support-blocks p {
+    text-align: center;
+    font-size: 16px; }
+  .footer-logo {
+    text-align: center; }
+    .footer-logo a {
+      margin-left: 80px; }
+  .footer-menu_list ul {
+    max-width: 170px;
+    margin: 0 auto; }
+  .footer-languages {
+    padding-right: 20px; }
+    .footer-languages .languages-select span {
+      right: 110px; }
+    .footer-languages .languages-content ul {
+      margin: 0 auto;
+      max-width: 100px;
+      padding-left: 170px; }
+  .languages-select {
+    font-size: 20px;
+    text-align: center; }
+    .languages-select p {
+      margin: 30px auto 0;
+      padding-left: 170px;
+      max-width: 70px; }
+    .languages-select span {
+      right: 80px; }
+  .languages-content {
+    left: 285px; }
+  .mob-menu_wrapper {
+    width: 100%;
+    position: absolute; }
+  .mob-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    text-align: center; }
+    .mob-menu_close {
+      background: url(../../img/drivers/close.png) no-repeat;
+      width: 20px;
+      height: 20px;
+      margin-right: auto;
+      margin-top: 20px; }
+    .mob-menu_logo {
+      font-family: "Avenir-Medium";
+      color: #4a4a4a;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 24px; }
+    .mob-menu_nav {
+      font-family: "Avenir-Regular";
+      font-size: 24px; }
+      .mob-menu_nav li {
+        color: #4a4a4a;
+        padding: 16px 0; }
+        .mob-menu_nav li:nth-of-type(2) {
+          background-image: -webkit-gradient(linear, right bottom, right top, from(#fda889), to(#fcd96e));
+          background-image: linear-gradient(to top, #fda889 0%, #fcd96e 100%);
+          color: #fff; }
+        .mob-menu_nav li:last-of-type {
+          color: #3eb1fd; }
+    .mob-menu_languages {
+      font-size: 24px;
+      color: #4a4a4a;
+      font-family: "Avenir-Regular";
+      margin-top: 16px;
+      position: relative; }
+      .mob-menu_languages p {
+        max-width: 70px;
+        margin: 0 auto; }
+      .mob-menu_languages span {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        background: url(../../img/drivers/down-arrow.png);
+        width: 21px;
+        height: 12px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
+  .languages-content_mob {
+    margin-top: 10px;
+    margin-right: 7px; }
+    .languages-content_mob li {
+      padding-top: 5px; } }
+
+@media (max-width: 575px) {
+  .mob-menu_wrapper {
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh; }
+  .mob-menu_close {
+    margin-left: 20px; }
+  .mob-menu_languages span {
+    left: 20px; }
+  .download-info {
+    text-align: center; }
+    .download-info h3 {
+      font-size: 24px; }
+  .languages-content {
+    position: static;
+    text-align: center; } }
+
+@media (max-width: 385px) {
+  .taxi-description a:nth-of-type(2) {
+    margin-right: 10px; }
+  .download-info {
+    text-align: center; }
+    .download-info h3 {
+      font-size: 24px; } }

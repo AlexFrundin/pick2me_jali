@@ -1,0 +1,89 @@
+.gradient-wrapper {
+  background-image: linear-gradient(45deg, #fda889 0%, #fcd96e 100%); }
+
+.logo {
+  margin-top: 40px; }
+  .logo p {
+    font-family: "Avenir-Medium";
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff; }
+
+.congrat {
+  width: 889px;
+  margin: 120px auto 100px;
+  padding: 70px 0 92px;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.25); }
+  .congrat-title {
+    text-align: center;
+    color: #4a4a4a; }
+    .congrat-title h1 {
+      font-family: "Avenir-Medium";
+      font-size: 36px;
+      font-weight: 700; }
+  .congrat-info {
+    width: 562px;
+    margin: 70px auto;
+    text-align: center; }
+    .congrat-info p {
+      font-family: "Avenir-Regular";
+      font-size: 20px;
+      line-height: 30px;
+      color: #4a4a4a; }
+      .congrat-info p:nth-of-type(2) {
+        margin-top: 50px;
+        margin-bottom: 80px; }
+    .congrat-info a {
+      color: #3eb1fd; }
+  .congrat-btn button {
+    width: 264px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 28px;
+    border: 2px solid #3eb1fd;
+    background-color: #3eb1fd;
+    text-align: center;
+    font-family: "Avenir-Medium";
+    font-size: 24px;
+    color: #fff; }
+
+@media (min-height: 1000px) {
+  .gradient-wrapper {
+    height: 100vh; } }
+
+@media (max-width: 991px) {
+  .congrat {
+    width: 100%; } }
+
+@media (max-width: 767px) {
+  .logo {
+    text-align: center; }
+  .congrat {
+    margin: 80px auto 50px; }
+    .congrat-info {
+      width: 100%;
+      padding: 0 15px; } }
+
+@media (max-width: 575px) {
+  .congrat-title h1 {
+    font-size: 26px; }
+  .congrat-info p {
+    font-size: 16px; } }
+
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot");
+  src: url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.woff") format("woff"), url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir-Regular';
+  src: url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot");
+  src: url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.woff") format("woff"), url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

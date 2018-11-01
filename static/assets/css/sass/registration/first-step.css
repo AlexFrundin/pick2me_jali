@@ -1,0 +1,304 @@
+.gradient-wrapper {
+  background-image: linear-gradient(45deg, #fda889 0%, #fcd96e 100%); }
+
+input::-webkit-input-placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+input:-ms-input-placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+input::-ms-input-placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+input::placeholder {
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px; }
+
+.logo {
+  margin-top: 35px; }
+  .logo a {
+    color: #fff;
+    font-family: "Avenir-Medium";
+    font-size: 36px;
+    font-weight: 700; }
+
+.languages-reg {
+  margin: 35px 0 0 0;
+  text-align: right;
+  font-family: "Avenir-Medium";
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer; }
+  .languages-reg_select {
+    position: absolute;
+    right: 10px;
+    z-index: 999; }
+    .languages-reg_select li {
+      margin-top: 10px; }
+    .languages-reg_select a {
+      font-weight: 400; }
+    .languages-reg_select span {
+      width: 21px;
+      height: 12px;
+      position: absolute;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+
+.tagline {
+  margin: 75px 0 60px;
+  text-align: center; }
+  .tagline h2 {
+    color: #fff;
+    font-family: "Avenir-Medium";
+    font-size: 48px;
+    font-weight: 700; }
+
+.registration {
+  width: 889px;
+  margin: 0 auto 100px;
+  padding-bottom: 86px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 15px; }
+  .registration-title {
+    padding-top: 48px;
+    text-align: center; }
+    .registration-title h1 {
+      font-family: "Avenir-Medium";
+      color: #4a4a4a;
+      font-size: 36px;
+      font-weight: 700; }
+  .registration-form {
+    margin-top: 70px;
+    padding-left: 197px; }
+    .registration-form p {
+      display: inline-block;
+      width: 149px;
+      margin: 0 44px 35px 0;
+      color: #4a4a4a;
+      font-family: "Avenir-Medium";
+      font-size: 20px;
+      line-height: 24px; }
+    .registration-form input {
+      width: 379px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      color: #4a4a4a;
+      font-family: "Avenir-Medium";
+      font-size: 18px; }
+
+.phone {
+  position: absolute;
+  top: 16px;
+  right: 190px;
+  max-width: 220px; }
+
+select {
+  width: 379px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: #9b9b9b;
+  font-family: "Avenir-Medium";
+  font-size: 18px;
+  line-height: 1.4;
+  cursor: pointer;
+  background: url(../../../img/registration/down-arrow.png) no-repeat center right; }
+
+.chose-language {
+  display: block;
+  margin-top: -20px;
+  margin-left: 200px;
+  font-family: "Avenir-Medium";
+  color: #9b9b9b; }
+
+.radio-btn {
+  width: 100%;
+  margin: 50px 0 0 0; }
+
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px; }
+
+#radio2 {
+  margin: 5px 0 0 7px; }
+
+.radio + label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer; }
+
+.radio + label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #578fd3;
+  border-radius: 50%;
+  background: #fff; }
+
+.radio + label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #578fd3;
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+.radio:checked + label:after {
+  opacity: 1; }
+
+label {
+  color: #4a4a4a;
+  font-family: "Avenir-Regular";
+  font-size: 18px;
+  margin-right: 80px; }
+
+.submit-btn input {
+  width: 264px !important;
+  height: 56px;
+  border-radius: 28px;
+  border: 2px solid #3eb1fd;
+  background-color: #3eb1fd;
+  text-align: center;
+  color: #fff !important;
+  font-size: 24px	!important;
+  margin-top: 30px;
+  margin-left: 120px; }
+
+.privacy-policy {
+  margin-top: 44px; }
+  .privacy-policy p {
+    text-align: center;
+    font-family: "Avenir-Regular";
+    font-size: 14px;
+    color: #4a4a4a; }
+  .privacy-policy a {
+    color: #fdaa88; }
+
+@media (min-height: 1000px) {
+  .gradient-wrapper {
+    height: 100vh; } }
+
+@media (max-width: 991px) {
+  .tagline h2 {
+    font-size: 42px; }
+  .registration {
+    width: 700px; }
+    .registration-form {
+      padding-left: 100px; }
+  .phone {
+    right: 100px; }
+  .radio {
+    max-width: 100px; } }
+
+@media (max-width: 767px) {
+  .logo {
+    text-align: center; }
+  .languages-reg {
+    text-align: center; }
+    .languages-reg_select {
+      position: static; }
+  .tagline h2 {
+    font-size: 36px; }
+  .registration-title h1 {
+    font-size: 28px; }
+  .registration {
+    width: 100%; }
+    .registration-form {
+      margin-top: 30px;
+      padding-left: 50px; }
+      .registration-form p {
+        width: 100%;
+        margin: 0 0 20px 0; }
+      .registration-form input {
+        margin-bottom: 25px; }
+  select {
+    margin-bottom: 20px; }
+  .chose-language {
+    margin-top: -10px;
+    margin-left: 0; }
+  label {
+    display: block;
+    margin-bottom: 40px; }
+  .phone {
+    top: inherit;
+    bottom: 0;
+    right: 80px;
+    margin-bottom: 0 !important; }
+  .submit-btn input {
+    margin-left: 80px; }
+  .privacy-policy {
+    margin-top: 10px; } }
+
+@media (max-width: 575px) {
+  .phone {
+    position: static;
+    margin-top: 1px; }
+  .select-phone select {
+    position: static;
+    float: left;
+    margin-right: 30px; } }
+
+@media (max-width: 490px) {
+  .tagline h2 {
+    font-size: 28px; }
+  .registration-title h1 {
+    font-size: 26px; }
+  .registration-form {
+    padding-left: 10px; }
+    .registration-form p {
+      font-size: 18px; }
+    .registration-form input {
+      font-size: 16px;
+      width: 90%; }
+    .registration-form select {
+      font-size: 16px; }
+  .submit-btn {
+    width: 100%;
+    text-align: center; }
+    .submit-btn input {
+      margin: 30px 0 !important; }
+  select {
+    width: 90%; }
+  .phone {
+    max-width: 55% !important; } }
+
+@media (max-width: 385px) {
+  .phone {
+    width: 40% !important; }
+  .tagline h2 {
+    font-size: 24px; }
+  .registration-title {
+    padding-top: 30px; }
+    .registration-title h1 {
+      font-size: 22px; } }
+
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot");
+  src: url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.woff") format("woff"), url("../../../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir-Regular';
+  src: url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot");
+  src: url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.woff") format("woff"), url("../../../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

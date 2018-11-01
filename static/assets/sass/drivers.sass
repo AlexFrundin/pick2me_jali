@@ -1,0 +1,350 @@
+@import "colors"
+@import "fonts"
+
+body
+	overflow-x: hidden
+	line-height: 1.5
+
+header
+	color: $text-color
+
+.logo-text
+	margin-top: 17px
+	font-family: $Avenir
+	a
+		font-size: 36px
+		font-weight: 700
+
+.clients-page
+	font-family: $Avenir-reg
+	margin-top: 25px
+	text-align: right
+	a 
+		font-size: 24px
+
+.drivers-page
+	font-family: $Avenir-reg
+	text-align: center
+	p
+		max-width: 193px
+		background-image: linear-gradient(to top, #fda889 0%, #fcd96e 100%)
+		padding: 25px 0
+		font-size: 24px
+		color: $white
+
+.register
+	margin-top: 23px
+	a
+		color: $register-color
+		font-family: $Avenir
+		font-size: 24px
+
+.languages
+	font-family: $Avenir-reg
+	text-align: right
+	font-size: 24px
+	margin-top: 24px
+	&-select
+		cursor: pointer
+		p
+			position: relative
+		span
+			display: block
+			position: absolute
+			top: 10px
+			right: -50px
+			background: url(../../img/down-arrow.png)
+			width: 21px
+			height: 12px
+			transition: 0.5s
+
+.languages-content
+	position: absolute
+	right: 0
+	z-index: 1
+	ul
+		margin-top: 10px
+	li
+		padding-top: 10px
+
+.rotate
+	transform: rotate(180deg)
+
+.mobile-app
+	margin-top: 30px
+
+.city-taxi
+	position: relative
+	img
+		width: 827px
+		height: 493px
+		top: 0
+		right: 0
+		position: absolute
+
+.taxi-description
+	margin-top: 120px
+	margin-bottom: 160px
+	color: $text-color
+	h2
+		font-family: $Avenir
+		font-size: 32px
+		margin-bottom: 40px
+	p
+		font-family: $Avenir-reg
+		font-size: 18px
+		margin-bottom: 50px
+	a
+		float: left
+		&:nth-of-type(2)
+			margin-left: 50px
+
+.taxi-app
+	margin-top: 250px
+	&_image
+		position: relative
+		img
+			position: absolute
+			max-width: 100%
+			left: 0
+			top: 0
+
+.app-description
+	h2
+		font-family: $Avenir
+		color: $black
+		font-size: 36px
+		margin-bottom: 40px
+	p
+		font-family: $Avenir-reg
+		font-size: 18px
+		color: $text-color
+	a
+		display: block
+		max-width: 264px
+		margin-top: 58px
+	button
+		width: 264px
+		height: 56px
+		border-radius: 28px
+		border: 2px solid $register-color
+		text-align: center
+		font-family: $Avenir
+		color: $register-color
+		font-size: 24px
+
+.conditions
+	margin-top: 150px
+	color: $text-color
+
+.title
+	text-align: center
+	margin-bottom: 60px
+	h3
+		font-family: $Avenir
+		font-size: 36px
+		color: $black
+		margin-bottom: 15px
+	p
+		font-family: $Avenir-reg
+		font-size: 20px
+
+.conditions-block
+	text-align: center
+	img
+		margin: 0 auto
+	h5
+		font-family: $Avenir
+		font-size: 24px
+		margin: 26px 0 20px
+	p
+		max-width: 335px
+		font-family: $Avenir-reg
+		font-size: 18px
+
+.manual
+	margin-top: 130px
+	&-title
+		width: 100%
+		color: $black
+		font-family: $Avenir
+		text-align: center
+		margin-bottom: 57px
+		h3
+			font-size: 36px
+	&-steps
+		h4
+			font-family: $Avenir
+			color: $black
+			font-size: 24px
+			margin-bottom: 22px
+			margin-left: 55px
+		p
+			font-family: $Avenir-reg
+			color: $text-color
+			font-size: 18px
+			margin-left: 55px
+			margin-bottom: 10px
+			max-width: 238px
+		img
+			max-width: 90%
+
+.manual-steps_mobile
+	max-width: 370px
+	margin: 0 auto
+	h4
+		font-family: $Avenir
+		color: $black
+		font-size: 24px
+		text-align: left
+		margin-bottom: 22px
+		margin-left: 65px
+	p
+		max-width: 240px
+		text-align: left
+		font-family: $Avenir-reg
+		color: $text-color
+		font-size: 18px
+		margin-left: 65px
+		margin-bottom: 10px
+	img
+		max-width: 90%
+
+.download-wrapper
+	margin-top: 150px
+	background-color: $black
+
+.car-phone
+	margin-top: -50px
+
+.download-info
+	h3
+		margin-top: 49px
+		font-family: $Avenir
+		color: $white
+		font-size: 36px
+	b
+		color: $highlighted
+	p
+		font-family: $Avenir-reg
+		font-size: 18px
+		color: $white
+		margin-top: 10px
+		margin-bottom: 10px
+	i
+		font-family: $Avenir-reg
+		font-size: 14px
+		color: $sub-title
+		display: block
+	a
+		display: block
+		max-width: 264px
+		margin: 40px 0
+	button
+		width: 264px
+		height: 56px
+		border-radius: 28px
+		border: 2px solid $register-color
+		text-align: center
+		font-family: $Avenir
+		color: $register-color
+		font-size: 24px
+
+.support
+	margin-top: 85px
+	margin-bottom: 100px
+	&-title
+		color: $black
+		text-align: center
+		margin-bottom: 60px
+		h3
+			font-family: $Avenir
+			font-size: 36px
+			margin-bottom: 15px
+		p
+			font-family: $Avenir-reg
+			font-size: 20px
+	&-blocks
+		color: $text-color
+		text-align: center
+		img
+			margin: 0 auto 23px
+		h6
+			font-family: $Avenir
+			font-size: 24px
+			margin-bottom: 21px
+		p
+			max-width: 335px
+			font-family: $Avenir-reg
+			font-size: 18px
+			
+footer
+	background-color: $black
+	color: $white
+
+.footer-menu
+	margin-top: 68px
+	&_list
+		font-family: $Avenir-reg
+		li
+			margin-top: 5px
+			font-size: 16px
+			&:nth-of-type(1)
+				font-size: 24px
+
+.last-list
+	max-width: 145px
+	margin-left: auto
+
+.footer-logo
+	a
+		font-family: $Avenir
+		font-size: 36px
+
+.footer-languages
+	margin-top: 0
+
+.rights
+	margin-top: 90px
+	margin-bottom: 30px
+
+.regulations
+	text-align: center
+	font-family: $Avenir-reg
+	font-size: 14px
+	a
+		margin-right: 34px
+
+.mobile
+	display: none
+
+.tablet
+	display: none
+
+.mobile-slider
+	position: absolute
+	opacity: 0
+	max-width: 100%
+	text-align: center
+
+
+
+
+
+@font-face
+	font-family: 'Avenir-Medium'
+	src: url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot')
+	src: url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.woff') format('woff'),
+	url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'Avenir-Regular'
+	src: url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot')
+	src: url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.woff') format('woff'),
+	url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal

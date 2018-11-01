@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+	<head>
+		{% load static %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>4 step</title>
+		<!-- Reser browser styles -->
+		<link href="{% static "assets/css/custom-reset.css" %}" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="{% static "assets/css/bootstrap-grid.min.css" %}" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="{% static "assets/css/sass/registration/fourth-step-rtl.css" %}" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="progres-line">
+						<hr>
+						<ul>
+							<li class="active">1<span>Contacts</span></li>
+							<li class="active">2<span>Personal info and vehicle details</span></li>
+							<li class="active">3<span class="this-page">Documents</span></li>
+							<li>4<span>Payment info</span></li>
+						</ul>
+					</div><!-- /.progres-line -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-title">
+						<h1>Documents</h1>
+						<p>According to the law, we must ask you to provide certain documents in order to register you as a driver</p>
+					</div><!-- /.page-title -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="documents">
+						<form action="/registration/fourth-step" method="post" enctype="multipart/form-data">
+							{% csrf_token %}
+							<input type="hidden" name="local" value="rtl">
+							<input type="hidden" name="id" value="{{ id }}">
+							<div class="documents-block">
+								<span>Required field*</span>
+								<h4>Driving license</h4>
+								<p>Photo of the current driving license, side with photo.</p>
+								<p class="expiration-date">Date of issue:</p> <select name="l_year" id="" required>
+									<option value="YY" selected disabled>YY</option>
+									<option value="2018">2018</option>
+									<option value="2017">2017</option>
+									<option value="2016">2016</option>
+								</select>
+								<select name="l_month" id="" required>
+									<option value="MM" selected disabled>MM</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+								<select name="l_day" id="" required>
+									<option value="DD" selected disabled>DD</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+								<div class="documents-block_upload">
+									<b>+ Upload</b>
+									<input type="file" accept="image/*" value="+ Upload" required id="upload" name="driver-license">
+								</div><!-- /.documents-block_upload -->
+							</div><!-- /.documents-block -->
+							<div class="documents-block">
+								<span>Required field*</span>
+								<h4>Your photo</h4>
+								<p>Please upload your clear portrait photo (not in full length).On it should be your face with open eyes without a hat and sunglasses</p>
+								<div class="documents-block_upload">
+									<b>+ Upload</b>
+									<input type="file" accept="image/*" value="+ Upload" required id="upload" name="photo">
+								</div><!-- /.documents-block_upload -->
+							</div><!-- /.documents-block -->
+							<div class="documents-block">
+								<span>Required field*</span>
+								<h4>Technical passport</h4>
+								<p>Photo of technical passport, page with the car number.</p>
+								<div class="documents-block_upload">
+									<b>+ Upload</b>
+									<input type="file" accept="image/*" value="+ Upload" required id="upload" name="passport">
+								</div><!-- /.documents-block_upload -->
+							</div><!-- /.documents-block -->
+							<div class="documents-block">
+								<span>Required field*</span>
+								<h4>Insurance</h4>
+								<p>OMTPL, photo of page with vehicle data and expiratioon date</p>
+								<p class="expiration-date">Expiration date:</p>
+                                <select name="i_year" id="" required>
+									<option value="YY" selected disabled>YY</option>
+									<option value="2018">2018</option>
+									<option value="2017">2017</option>
+									<option value="2016">2016</option>
+								</select>
+								<select name="i_month" id="" required>
+									<option value="MM" selected disabled>MM</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+								<select name="i_day" id="" required>
+									<option value="DD" selected disabled>DD</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+								<div class="documents-block_upload">
+									<b>+ Upload</b>
+									<input type="file" accept="image/*" value="+ Upload" required id="upload" name="insurance">
+								</div><!-- /.documents-block_upload -->
+							</div><!-- /.documents-block -->
+							<div class="documents-btn">
+								<input type="submit" value="Next">
+							</div><!-- /.documents-btn -->
+						</form>
+					</div><!-- /.documents -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+
+
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+		<script src="{% static "assets/js/main.js" %}"></script>
+		<script>
+			var inpt = document.querySelectorAll('#upload');
+			for (var i = 0; i < inpt.length; i++) {
+				inpt[i].addEventListener('change', function() {
+					var splittedFakePath = this.value.split('\\');
+					this.previousElementSibling.textContent =
+					splittedFakePath[splittedFakePath.length - 1].replace(/([a-zA-Z0-9_\W]{7})[a-zA-Z0-9_\W]*(\.[a-zA-Z]+)/g, '$1...$2');
+					this.parentElement.classList.add('new-upload');
+				});
+			}
+			//alert('coelacanth.gif'.replace(/(\w{7})\w*(\.[a-zA-Z]+)/g, '$1...$2'));
+		</script>
+	</body>
+</html>

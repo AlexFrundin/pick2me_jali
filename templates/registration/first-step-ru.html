@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load static %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>1 step</title>
+		<!-- Reser browser styles -->
+		<link href="{% static "assets/css/custom-reset.css" %}" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="{% static "assets/css/bootstrap-grid.min.css" %}" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="{% static "assets/css/sass/registration/first-step.css" %}" rel="stylesheet">
+	</head>
+	<body>
+		<div class="gradient-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="tagline">
+							<h2>Становитесь курьером Pick2me</h2>
+						</div>
+					</div><!-- /.col-md-12 -->
+				</div><!-- /.row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="registration">
+							<div class="registration-title">
+								<h1>Регистрация</h1>
+							</div><!-- /.registration-title -->
+							<div class="registration-form">
+								<form action="/registration/first-step-ru" method="post">
+									{% csrf_token %}
+									<input type="hidden" name="local" value="ru">
+									<p>Email:</p> <input type="email" name="email" required placeholder="johndoe@gmail.com">
+									<br>
+									<p>Полное Имя:</p> <input type="text" name="name" required placeholder="John Doe">
+									<br>
+									<p>Номер телефона:</p> <input type="tel" name="phone" placeholder="+380 50 232 45 67">
+									<br>
+									<p>Город:</p> <select name="city" id="" required>
+										<option value="Kyiv" selected>Kyiv</option>
+										<option value="Paris">Paris</option>
+										<option value="jmerinka">Жмеринка</option>
+									</select>
+									<br>
+									<p>Язык:</p> <select name="language" id="" name="language">
+										<option value="Ukrainian" selected="">Украинский</option>
+										<option value="Russian">Русский</option>
+										<option value="English">Английский</option>
+										<option value="Arabian">Арабский</option>
+									</select>
+									<span class="chose-language">Язык общения</span>
+									<br>
+									<div class="radio-btn">
+										<input type="radio" class="radio" id="radio" name="have" value="have">
+										<label for="radio">У меня есть автомобиль</label>
+										<input type="radio" class="radio" id="radio2" name="have" value="no-have">
+										<label for="radio2">Другое транспорт</label>
+									</div><!-- /.radio-btn -->
+									<br>
+									<div class="submit-btn">
+										<input type="submit" value="Далее">
+									</div><!-- /.submit-btn -->
+								</form>
+							</div>
+							<!-- /.form -->
+							<div class="privacy-policy">
+								<p>Зарегистрировавшись, вы принимаете наши <a href="">условия предоставления услуг и политики конфиденциальности.</a></p>
+							</div>
+						</div><!-- /.form-section -->
+					</div><!-- /.col-md-12 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.gradient-wrapper -->
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+		<script src="{% static "assets/js/main.js" %}"></script>
+	</body>
+</html>

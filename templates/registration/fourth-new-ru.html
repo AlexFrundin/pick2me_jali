@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load static %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>4 step</title>
+		<!-- Reser browser styles -->
+		<link href="{% static "assets/css/custom-reset.css" %}" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="{% static "assets/css/bootstrap-grid.min.css" %}" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="{% static "assets/css/sass/registration/fourth-new.css" %}" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="progres-line">
+						<hr>
+						<ul>
+							<li class="active">1<span>Контакты</span></li>
+							<li class="active">2<span class="this-page">Персональная информация <br> и способ доставки</span></li>
+							<li class="active">3<span class="this-page">Документы</span></li>
+							<li>4<span>Платежная информация</span></li>
+						</ul>
+					</div><!-- /.progres-line -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-title">
+						<h1>Документы</h1>
+						<p>Согласно закону, мы должны попросить вас предоставить определенные документы, чтобы зарегистрировать вас в качестве курьера</p>
+					</div><!-- /.page-title -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="documents">
+						<form action="/registration/fourth-new" method="post" enctype="multipart/form-data">
+							{% csrf_token %}
+							<input type="hidden" name="local" value="ru">
+							<input type="hidden" name="id" value="{{ id }}">
+							<div class="documents-block">
+								<span>Обязательное поле*</span>
+								<h4>Ваша фоторгафия</h4>
+								<p>Загрузите свою четкую портретную фотографию (не в полный рост), на которой изображено лицо с открытыми глазами, без шляпы и солнцезащитных очков</p>
+								<div class="documents-block_upload">
+									<b>+ Загрузить</b>
+									<input type="file"  accept="image/*" value="+ Upload"   id="upload" name="photo">
+								</div><!-- /.documents-block_upload -->
+							</div><!-- /.documents-block -->
+							<div class="documents-block">
+								<span>Обязательное поле*</span>
+								<h4>Паспорт</h4>
+								<p>Первую, вторую страницу и прописка.</p>
+								<div class="documents-block_upload">
+									<b>+ Загрузить</b>
+									<input type="file" accept="image/*" value="+ Upload"  id="upload" name="passport">
+								</div><!-- /.documents-block_upload  accept="image/*" -->
+							</div><!-- /.documents-block -->
+							<div class="documents-btn">
+								<input type="submit" value="Далее">
+							</div><!-- /.documents-btn -->
+						</form>
+					</div><!-- /.documents -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+
+
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+		<script src="{% static "assets/js/main.js" %}"></script>
+		<script>
+			var inpt = document.querySelectorAll('#upload');
+			for (var i = 0; i < inpt.length; i++) {
+				inpt[i].addEventListener('change', function() {
+					var splittedFakePath = this.value.split('\\');
+					this.previousElementSibling.textContent =
+					splittedFakePath[splittedFakePath.length - 1].replace(/([a-zA-Z0-9_\W]{7})[a-zA-Z0-9_\W]*(\.[a-zA-Z]+)/g, '$1...$2');
+					this.parentElement.classList.add('new-upload');
+				});
+			}
+			//alert('coelacanth.gif'.replace(/(\w{7})\w*(\.[a-zA-Z]+)/g, '$1...$2'));
+		</script>
+	</body>
+</html>

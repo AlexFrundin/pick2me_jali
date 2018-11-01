@@ -1,0 +1,266 @@
+@import "../colors"
+@import "../fonts"
+
+input
+	&::-webkit-input-placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+	&:-ms-input-placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+	&::-ms-input-placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+	&::placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+
+.progres-line
+	width: 740px
+	margin: 50px auto 0
+	text-align: center
+	hr
+		margin: 0 auto
+		border: none
+		width: 730px
+		height: 2px
+		color: $progres-line
+		background-color: $progres-line
+	ul
+		margin-top: -18px
+	li
+		display: inline-block
+		position: relative
+		width: 32px
+		height: 32px
+		border-radius: 50%
+		border: 1px solid $progres-line
+		background-color: $progres-line
+		text-align: center
+		padding-top: 7px
+		font-family: $Avenir
+		font-size: 16px
+		color: $white
+		&:nth-of-type(n+2)
+			margin-left: 200px
+	span
+		position: absolute
+		left: -40px
+		bottom: -70px
+		width: 114px
+		height: 50px
+		color: $text-color
+		font-family: $Avenir-reg
+		font-size: 18px
+
+.active
+	background-color: $progres-active !important
+	border: 1px solid $white !important
+
+.this-page
+	font-weight: 700
+
+.page-title
+	margin-top: 180px
+	margin-bottom: 130px
+	text-align: center
+	color: $text-color
+	h1
+		font-family: $Avenir
+		font-size: 36px
+		font-weight: 700
+	p
+		margin-top: 5px
+		font-family: $Avenir-reg
+		font-size: 20px
+
+.pay-info
+	width: 560px
+	margin: 0 auto
+	color: $text-color
+	p
+		display: inline-block
+		margin-right: 50px
+		margin-bottom: 32px
+		width: 129px
+		font-family: $Avenir
+		font-size: 20px
+		line-height: 24px
+	input
+		width: 360px
+		border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+		font-family: $Avenir
+		font-size: 18px
+		color: $text-color
+		&[type=password]
+			width: 76px
+	select
+		font-family: $Avenir
+		font-size: 18px
+		color: $text-color
+		border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+		background: url(../../../img/registration/down-arrow.png) no-repeat right center
+		cursor: pointer
+
+.field-note
+	display: block
+	margin: -20px 0 0 185px
+	font-family: $Avenir
+	font-size: 14px
+	color: $place-holder
+
+input
+	&[type="submit"]
+		width: 264px
+		height: 56px
+		display: block
+		margin: 90px auto 110px
+		border-radius: 28px
+		border: 2px solid $register-color
+		background-color: $register-color
+		color: $white
+		font-size: 24px
+
+
+
+@media (max-width: 1199px)
+	.progres-line
+		hr
+			width: 600px
+		li
+			&:nth-of-type(n+2)
+				margin-left: 156px
+
+@media (max-width: 991px)
+	.progres-line
+		padding-left: 30px
+
+@media (max-width: 767px)
+	.progres-line
+		width: 100%
+		text-align: left
+		padding: 0
+		hr
+			width: 100%
+		li
+			&:nth-of-type(n+2)
+				margin-left: 123.3px
+		span
+			font-size: 16px
+
+	.page-title
+		margin-bottom: 80px
+		h1
+			font-size: 32px
+		p
+			font-size: 18px
+
+	.pay-info
+		width: 100%
+		p
+			font-size: 18px
+		input
+			width: 320px
+			font-size: 16px
+
+	input
+		&[type="submit"]
+			width: 264px
+			font-size: 24px
+
+@media (max-width: 575px)
+	.progres-line
+		margin: 50px auto 0
+		padding-left: 0px
+		max-width: 420px
+		hr
+			width: 400px
+		li
+			&:nth-of-type(n+2)
+				margin-left: 90px
+		span
+			width: 80px
+			font-size: 14px
+			left: -25px
+			bottom: -60px
+
+	.page-title
+		margin-top: 140px
+		margin-bottom: 50px
+		h1
+			font-size: 26px
+		p
+			font-size: 16px
+
+	.pay-info
+		p
+			display: block
+			width: 100%
+			margin-bottom: 10px
+			font-size: 18px
+		input
+			margin-bottom: 30px
+			width: 100%
+
+	.field-note
+		margin: -20px 0 0 0
+
+	input
+		&[type="submit"]
+			width: 264px
+			font-size: 24px
+			margin-bottom: 50px
+
+@media (max-width: 450px)
+	.progres-line
+		max-width: 320px
+		hr
+			width: 300px
+		li
+			&:nth-of-type(n+2)
+				margin-left: 58px
+		span
+			font-size: 0
+
+	.page-title
+		margin-top: 80px
+
+@media (max-width: 360px)
+	.progres-line
+		hr
+			width: 260px
+		li
+			&:nth-of-type(n+2)
+				margin-left: 50px
+
+	.pay-info 
+		input
+			&[type=password]
+				width: 60px
+
+	.phone
+		width: 60%
+
+
+
+@font-face
+	font-family: 'Avenir-Medium'
+	src: url('../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot')
+	src: url('../../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../../../fonts/Avenir-medium/AvenirNextCyr-Medium.woff') format('woff'),
+	url('../../../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'Avenir-Regular'
+	src: url('../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot')
+	src: url('../../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../../../fonts/Avenir-regular/AvenirNextCyr-Regular.woff') format('woff'),
+	url('../../../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
