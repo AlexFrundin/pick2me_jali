@@ -80,18 +80,19 @@ header {
   .delivery-bg img {
     position: absolute;
     top: 10px;
-    left: -120px; }
+    left: 180px; }
   .delivery-bg:after {
     content: url(../../img/clients/cloud.png);
     position: absolute;
     top: -5px;
-    right: -100px; }
+    right: -60px; }
 
 .main-title {
   text-align: center;
   color: #4a4a4a;
   margin-bottom: 170px; }
   .main-title h1 {
+    padding-top: 30px;
     font-size: 32px;
     font-family: "Avenir-Medium"; }
   .main-title p {

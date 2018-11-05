@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en">
 	<head>
 		{% load static %}
 		<meta charset="utf-8">
@@ -16,8 +16,8 @@
 		<!-- Animate -->
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 		<!-- Custom styles for this template -->
-		<link href="{% static "assets/css/sass/clients-rtl.css" %}" rel="stylesheet">
-		<link href="{% static "assets/css/sass/clients-media-rtl.css" %}" rel="stylesheet">
+		<link href="{% static "assets/css/sass/clients.css" %}" rel="stylesheet">
+		<link href="{% static "assets/css/sass/clients-media.css" %}" rel="stylesheet">
 		<!-- Slider -->
 		<link href="{% static "assets/slick/slick.css" %}" rel="stylesheet">
 		<link href="{% static "assets/slick/slick-theme.css" %}" rel="stylesheet">
@@ -29,19 +29,19 @@
 					<div class="col-md-1 col-lg-1">
 						<img src="{% static "assets/img/logo-test.png" %}" alt="" width="88" height="88">
 					</div>
-					<div class="col-md-3 col-lg-2">
+					<div class="col-md-4 col-lg-2">
 						<div class="logo-text">
-							<p><a href="clients-rtl">Pick2Me</a></p>
+							<p><a href="/">Pick2Me</a></p>
 						</div>
 					</div><!-- /.col-md-3 -->
 					<div class="col-md-3">
 						<div class="clients-page">
-							<p><a href="clients-rtl">For clients</a></p>
+							<p><a href="clients">For clients</a></p>
 						</div>
 					</div><!-- /.col-md-2 -->
 					<div class="col-md-3">
 						<div class="drivers-page">
-							<p><a href="drivers-rtl">For drivers</a></p>
+							<p><a href="drivers">For drivers</a></p>
 						</div>
 					</div><!-- /.col-md-3 -->
 					<div class="col-md-2 col-lg-3">
@@ -50,18 +50,16 @@
 							<div class="languages-content">
 								<ul>
 									<li><a href="clients-ru">Русский</a></li>
-									<li><a href="clients">English</a></li>
+									<li><a href="clients-rtl">Arabian</a></li>
 								</ul>
 							</div>
 						</div>
 					</div><!-- /.col-md-4 -->
 				</div><!-- /.row -->
-
-
 				<div class="row mobile">
 					<div class="col-6">
 						<div class="logo-text">
-							<p><a href="clients-rtl">Pick2Me</a></p>
+							<p><a href="/">Pick2Me</a></p>
 						</div>
 					</div><!-- /.col-xs-6 -->
 					<div class="col-6">
@@ -79,16 +77,16 @@
 							</div>
 							<div class="mob-menu_nav">
 								<ul>
-									<li><a href="clients-rtl">For clients</a></li>
-									<li><a href="drivers-rtl">For drivers</a></li>
+									<li><a href="clients">For clients</a></li>
+									<li><a href="drivers">For drivers</a></li>
 								</ul>
 							</div>
 							<div class="mob-menu_languages">
-								<div class="languages-select_mob"><p>Languages<span></span></p></div>
+								<div class="languages-select_mob"><p>Languages <span></span></p></div>
 								<div class="languages-content_mob">
 									<ul>
-										<li><a href="clients-ru">Русский</a></li>
-										<li><a href="clients">English</a></li>
+										<li><a href="client-ru">Russian</a></li>
+										<li><a href="clients-rtl">Arabian</a></li>
 									</ul>
 								</div>
 							</div>
@@ -101,7 +99,7 @@
 			<div class="container">
 				<main>
 					<div class="row">
-						<div class="delivery-bg">
+						<div class="text-center">
 							<img src="{% static "assets/img/clients/delivery.png" %}" alt="fly box">
 						</div><!-- /.delivery-bg -->
 					</div><!-- /.row -->
@@ -245,6 +243,7 @@
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 		</div><!-- /.download-app -->
+
 		<div class="container">
 			<div class="about-servise desktop-mob">
 				<div class="row" data-aos="fade-up" data-aos-duration="1000">
@@ -343,7 +342,7 @@
 						<div class="row">
 							<div class="col-lg-2 col-md-6 order-lg-1 order-md-1 order-sm-1 order-1">
 								<div class="footer-logo">
-									<p><a href="#">Pick2Me</a></p>
+									<p><a href="clients">Pick2Me</a></p>
 								</div>
 							</div><!-- /.col-md-3 -->
 							<div class="col-lg-3 col-md-4 order-lg-2 order-md-3 order-sm-3 order-3">
@@ -381,11 +380,11 @@
 							</div><!-- /.col-md-2 -->
 							<div class="col-lg-2 col-md-6 order-lg-5 order-md-2 order-sm-2 order-2">
 								<div class="languages footer-languages">
-									<div class="languages-select"><p>Languages<span></span></p></div>
+									<div class="languages-select"><p>Languages <span></span></p></div>
 									<div class="languages-content">
 										<ul>
 											<li><a href="clients-ru">Русский</a></li>
-											<li><a href="clients.html">English</a></li>
+											<li><a href="clients-rtl">Arabian</a></li>
 										</ul>
 									</div>
 								</div>
@@ -396,7 +395,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="regulations">
-									<p><a href="">Terms and conditions</a> <a href="">Privacy policy</a></p>
+									<p><a href="/">Terms and conditions</a> <a href="/">Privacy policy</a></p>
 								</div>
 						</div><!-- /.row -->
 					</div><!-- /.rights -->
@@ -412,7 +411,6 @@
 	<script>
 		$('.directions-block').slick({
 				arrows: false,
-				rtl: true,
 				dots: true,
   				infinite: false,
   				slidesToShow: 1,

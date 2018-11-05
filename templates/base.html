@@ -1,0 +1,49 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Reser browser styles -->
+  <link href="{% static "assets/css/custom-reset.css" %}" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="{% static "assets/css/bootstrap.min.css" %}" rel="stylesheet"> -->
+  <link href="{% static "assets/css/bootstrap-grid.min.css" %}" rel="stylesheet">
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <!-- Slider -->
+  <link href="{% static "assets/slick/slick.css" %}" rel="stylesheet">
+  <link href="{% static "assets/slick/slick-theme.css" %}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  {% block ext_style%}
+  {% endblock %}
+  <title>{%block title%}{%endblock%}Pick2Me</title>
+</head>
+<body>
+  {%block content%}
+  {% endblock %}
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous">
+  </script>
+
+  <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'assets/js/main.js' %}"></script>
+	<script src="{% static 'assets/slick/slick.js' %}"></script>
+  <script>
+    $('.directions-block').slick({
+        arrows: false,
+        dots: true,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
