@@ -78,9 +78,9 @@ header {
   width: 100%;
   height: 420px; }
   .delivery-bg img {
-    position: absolute;
-    top: 10px;
-    left: 180px; }
+    /* position: absolute; */
+    /* top: 10px; */
+    margin:20px auto; }
   .delivery-bg:after {
     content: url(../../img/clients/cloud-rtl.png);
     position: absolute;
