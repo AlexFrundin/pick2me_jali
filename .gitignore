@@ -1,8 +1,6 @@
 /__pycache__/
 /DELETE/
 /migrations/
-settings.py
-*.sqlite3
 *.pyc
 *.docx
 *.7z
