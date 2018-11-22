@@ -8,29 +8,34 @@
 
 {% block content%}
 
-<div class="container">
-  {% include 'include/header.html'%}
+<div class="header-background-color">
+  <div class="container ">
+    {% include 'include_/clients/header.html'%}
+  </div>
 </div>
 
 <div class="main-wrapper">
   <div class="container">
-    {% include 'include/main-wrapper.html'%}
+    {% include 'include_/clients/main-wrapper.html'%}
   </div>
 </div>
 
 
 <div class="container">
-    {% include 'include/mobile-wrapper.html'%}
+    {% include 'include_/clients/mobile-wrapper.html'%}
 </div>
 <div class="download-app">
-    {% include 'include/download-app.html' %}
+    {% include 'include_/clients/download-app.html' %}
 </div>
 
 <div class="container">
-    {% include 'include/about-service.html' %}
+    {% include 'include_/clients/about-service.html' %}
 </div>
 
-{% include 'include/footer.html' %}
-
+{% include 'include_/footer.html' %}
 
 {% endblock%}
+
+{% block ext_script%}
+    {{block.super}}
+{% endblock %}

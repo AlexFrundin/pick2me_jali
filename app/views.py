@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Personal, Links, Host
+from .models import Personal, Links, Host,ContentClients,ContentDrivers
 from django.core.mail import send_mail
 
 
@@ -41,11 +41,15 @@ def send_email(user):
 
 
 def main(request):
-    return redirect("clients")
+    return redirect("clients/en")
 
 
-def drivers(request):
-    return render(request, "drivers.html", {"link" : Links.objects.get(name="driver")})
+def drivers(request, lang):
+
+    logo_url = 'drivers'
+    first={'url':'drivers-ru', 'name':"Русский"}
+    second = {'url':'drivers-rtl', 'name':"Arabian"}
+    return render(request, "drivers_new.html", {"link" : Links.objects.get(name="driver"), 'first':first, 'second':second,'logo_url':logo_url})
 
 
 def drivers_rtl(request):
@@ -56,8 +60,24 @@ def drivers_ru(request):
     return render(request, "drivers-ru.html", {"link" : Links.objects.get(name="driver")})
 
 
-def client(request):
-    return render(request, "clients.html", {"link" : Links.objects.get(name="client")})
+def clients(request, lang):
+    obj = ContentClients.objects.get(lang=lang)
+    logo_url = 'clients'
+    lang = lang
+    if lang=='en':
+        first = {'url':'clients', 'lang':'ru', 'name':"Русский"}
+        second = {'url':'clients','lang':'rtl', 'name':"Arabian"}
+        clients = {'url':'clients', 'name':"For clients"}
+        drivers = {'url':'drivers', 'name':"For drivers"}
+    elif lang == 'ru':
+        first = {'url':'clients', 'lang':'en', 'name':"English"}
+        second = {'url':'clients', 'lang':'rtl', 'name':"Arabian"}
+        clients = {'url':'clients', 'name':"Для клиентов"}
+        drivers = {'url':'drivers', 'name':"Для водителей"}
+    elif lang == 'rtl':
+        first = {'url':'clients', 'lang':'en', 'name':"English"}
+        second = {'url':'clients', 'lang':'ru', 'name':"Русский"}
+    return render(request, "clients.html", {"link" : Links.objects.get(name="client"),'first':first, 'second':second, 'logo_url':logo_url, 'obj':obj, 'clients':clients, 'drivers':drivers, 'lang':lang})
 
 
 def client_rtl(request):

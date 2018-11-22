@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Personal(models.Model):
     email = models.CharField(max_length=100, blank=True, null=True, default='')
     name = models.CharField(max_length=100, blank=True, null=True, default='')
@@ -30,6 +31,120 @@ class Personal(models.Model):
 
     def __str__(self):
         return (str(self.id) + '  ' + self.name)
+
+class ContentClients(models.Model):
+
+    LANGUAGE = (
+        ('en',"English"),
+        ('ru','Русский'),
+        ('rtl','Arabian')
+    )
+
+    lang = models.CharField('language',max_length=100, choices=LANGUAGE, unique=True)
+
+    main_title = models.CharField(max_length=50)
+    main_descrription = models.TextField()
+
+    food_delivery = models.CharField(max_length=100)
+    food_delivery_description = models.TextField()
+
+    track_order = models.CharField(max_length=100)
+    track_order_description = models.TextField()
+
+    mobile_app = models.CharField(max_length=100)
+    mobile_app_description = models.TextField()
+
+    range_title = models.CharField(max_length=100)
+
+    pills = models.CharField(max_length=100)
+    pills_description = models.TextField()
+
+    clothes = models.CharField(max_length=100)
+    clothes_description = models.TextField()
+
+    food_box = models.CharField(max_length=100)
+    food_box_description = models.TextField()
+
+    dishes = models.CharField(max_length=100)
+    dishes_description = models.TextField()
+
+    taxi = models.CharField(max_length=100)
+    taxi_description = models.TextField()
+
+    download_app = models.CharField(max_length=100)
+    download_app_description = models.TextField()
+
+    about_first = models.CharField(max_length=100)
+    about_first_description = models.TextField()
+
+    about_second = models.CharField(max_length=100)
+    about_second_description = models.TextField()
+
+    about_third = models.CharField(max_length=100)
+    about_third_description = models.TextField()
+
+    about_four = models.CharField(max_length=100)
+    about_four_description = models.TextField()
+
+    about_five = models.CharField(max_length=100)
+    about_five_description = models.TextField()
+
+    about_six = models.CharField(max_length=100)
+    about_six_description = models.TextField()
+
+    def __str__(self):
+        return self.get_lang_display()
+
+        
+class Footer(models.Model):
+    pass
+
+
+
+class ContentDrivers(models.Model):
+    LANGUAGE = (
+        ('en',"English"),
+        ('ru','Русский'),
+        ('rtl','Arabian')
+    )
+
+    lang = models.CharField('language',max_length=100, choices=LANGUAGE, unique=True)
+
+    taxi_title = models.CharField(max_length=100)
+    taxi_description = models.TextField()
+
+    register_title = models.CharField(max_length=100)
+    register_description = models.TextField()
+
+    title_title = models.CharField(max_length=100)
+    title_p = models.CharField(max_length=100)
+    title_descriptiom = models.TextField()
+
+    step_title = models.CharField(max_length=100)
+    step_one_title = models.CharField(max_length=100)
+    step_one_description = models.TextField()
+    step_two_title = models.CharField(max_length=100)
+    step_two_description = models.TextField()
+    step_three_title = models.CharField(max_length=100)
+    step_three_description = models.TextField()
+
+    download_title = models.CharField(max_length=100)
+    download_p = models.CharField(max_length=100)
+    download_p_p = models.CharField(max_length=100)
+    download_description = models.TextField()
+
+    about_title = models.CharField(max_length=100)
+    about_p = models.CharField(max_length=100)
+
+    about_one_title = models.CharField(max_length=100)
+    about_one_description = models.TextField()
+
+    about_two_title = models.CharField(max_length=100)
+    about_two_description = models.TextField()
+
+    about_three_title = models.CharField(max_length=100)
+    about_three_description = models.TextField()
+
 
 
 class Links(models.Model):

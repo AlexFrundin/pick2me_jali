@@ -5,16 +5,26 @@ body {
 header {
   color: #4a4a4a; }
 
+.header-background-color{
+    background-color: #000000;
+  }
 .center-img {
   display:block !important;
   margin:0 auto !important;
 }
-.logo-text {
-  margin-top: 17px;
-  font-family: "Avenir-Medium"; }
-  .logo-text a {
-    font-size: 36px;
-    font-weight: 700; }
+
+.logo-text{
+  height: 100%;
+  position: relative;
+}
+.logo-text img{
+  position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
 
 .clients-page {
   font-family: "Avenir-Regular";
@@ -22,18 +32,17 @@ header {
   .clients-page p {
     margin-left: auto;
     max-width: 193px;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#fda889), to(#fcd96e));
-    background-image: linear-gradient(to top, #fda889 0%, #fcd96e 100%);
     padding: 25px 0;
     font-size: 24px;
-    color: #fff; }
+    color: #FCD96E; }
 
 .drivers-page {
   font-family: "Avenir-Regular";
   padding-left: 45px;
   margin-top: 25px; }
   .drivers-page a {
-    font-size: 24px; }
+    font-size: 24px;
+  color:#fff;}
 
 .languages {
   font-family: "Avenir-Regular";
@@ -44,7 +53,8 @@ header {
     padding-right: 40px;
     cursor: pointer; }
     .languages-select p {
-      position: relative; }
+      position: relative;
+    color:#ffffff;}
     .languages-select span {
       display: block;
       position: absolute;
@@ -60,7 +70,8 @@ header {
   position: absolute;
   right: 40px;
   z-index: 1;
-  background: #fff; }
+  background: #000;
+color:#fff; }
   .languages-content ul {
     margin-top: 10px;
     padding: 0 15px 5px; }
@@ -74,9 +85,9 @@ header {
 .main-wrapper {
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(42%, #e4f8ff), to(#71d5fb));
-  background-image: linear-gradient(0deg, #ffffff 0%, #e4f8ff 42%, #71d5fb 100%); }
-
+  /* background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(42%, #e4f8ff), to(#71d5fb));
+  background-image: linear-gradient(0deg, #ffffff 0%, #e4f8ff 42%, #71d5fb 100%); } */
+}
 .delivery-bg {
   position: relative;
   width: 100%;
@@ -87,18 +98,19 @@ header {
     /* top: 10px; */
     margin:20px auto;
      }
-  .delivery-bg:after {
+  /* .delivery-bg:after {
     content: url(../../img/clients/cloud.png);
     position: absolute;
-    top: -5px;
-    right: -60px; }
+    top: 0px;
+    right: -60px; } */
 
 .main-title {
   text-align: center;
   color: #4a4a4a;
-  margin-bottom: 170px; }
+  margin-bottom: 170px;
+ }
   .main-title h1 {
-    margin-top: -30px;
+    margin-top: 60%;
     font-size: 32px;
     font-family: "Avenir-Medium"; }
   .main-title p {
@@ -106,22 +118,32 @@ header {
     font-size: 18px;
     font-family: "Avenir-Regular"; }
 
+.main-img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-img-food {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
 .online-food {
   position: absolute;
-  left: -80px; }
+  left: -80px;
+  margin-bottom: -125px;
+}
 
 .food-delivery {
   color: #4a4a4a; }
-  .food-delivery h2 {
+.food-delivery h2 {
     margin: 29px 0 60px;
-    font-size: 36px;
+    font-size: 32px;
     font-family: "Avenir-Medium"; }
   .food-delivery p {
     font-family: "Avenir-Regular";
     font-size: 18px; }
 
 .track-order {
-  margin-top: 98px;
+  margin-top: 148px;
   margin-bottom: 40px;
   color: #4a4a4a; }
   .track-order h2 {
@@ -146,7 +168,8 @@ header {
   .mobile-app p {
     font-family: "Avenir-Regular";
     font-size: 18px;
-    margin-bottom: 40px; }
+    /* margin-bottom: 40px;  */
+  }
   .mobile-app a {
     float: left; }
     .mobile-app a:nth-of-type(3) {

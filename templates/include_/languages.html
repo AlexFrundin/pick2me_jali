@@ -1,0 +1,9 @@
+{% load staticfiles %}
+
+<div class="languages-select"><p>Languages <span></span></p></div>
+  <div class="languages-content">
+    <ul>
+      <li><a href="{% url first.url lang=first.lang %}">{{first.name}}</a></li>
+      <li><a href="{% url second.url lang=second.lang %}">{{second.name}}</a></li>
+    </ul>
+  </div>

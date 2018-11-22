@@ -5,7 +5,7 @@
     <div class="col-md-12">
       <div class="download-app_description">
         <h3>{{obj.download_app}}</h3>
-        <p>{{obj.download_app_description}}</p>
+        <p>{{obj.download_app_description|safe}}</p>
         <a href="{{ link.playMarket }}"><img src="{% static "assets/img/clients/google-play.png" %}" alt="Google Play button"></a>
         <a href="{{ link.appStore }}"><img src="{% static "assets/img/clients/app-store.png" %}" alt="App Store button"></a>
       </div><!-- /.download-description -->

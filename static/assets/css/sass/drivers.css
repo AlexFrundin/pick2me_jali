@@ -5,30 +5,41 @@ body {
 header {
   color: #4a4a4a; }
 
-.logo-text {
-  margin-top: 17px;
-  font-family: "Avenir-Medium"; }
-  .logo-text a {
-    font-size: 36px;
-    font-weight: 700; }
+  .header-background-color{
+      background-color: #000000;
+    }
+
+  .logo-text{
+    height: 100%;
+    position: relative;
+  }
+  .logo-text img{
+    position: absolute;
+      margin: auto;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+  }
 
 .clients-page {
   font-family: "Avenir-Regular";
   margin-top: 25px;
   text-align: right; }
   .clients-page a {
-    font-size: 24px; }
+    font-size: 24px;
+  color:#fff; }
 
 .drivers-page {
   font-family: "Avenir-Regular";
   text-align: center; }
   .drivers-page p {
     max-width: 193px;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#fda889), to(#fcd96e));
-    background-image: linear-gradient(to top, #fda889 0%, #fcd96e 100%);
+    /* background-image: -webkit-gradient(linear, left bottom, left top, from(#fda889), to(#fcd96e));
+    background-image: linear-gradient(to top, #fda889 0%, #fcd96e 100%); */
     padding: 25px 0;
     font-size: 24px;
-    color: #fff; }
+    color: #FCD96E; }
 
 .register {
   margin-top: 23px; }
@@ -45,7 +56,8 @@ header {
   .languages-select {
     cursor: pointer; }
     .languages-select p {
-      position: relative; }
+      position: relative;
+      color:#ffffff; }
     .languages-select span {
       display: block;
       position: absolute;
@@ -59,11 +71,13 @@ header {
 
 .languages-content {
   position: absolute;
-  right: 30px;
+  right: 0px;
   z-index: 1;
-  background-color: #fff; }
+  background: #000;
+color:#fff; }
   .languages-content ul {
-    margin-top: 10px; }
+    margin-top: 10px;
+  padding: 0 15px 5px; }
   .languages-content li {
     padding-top: 10px; }
 

@@ -1,0 +1,38 @@
+{% load staticfiles %}
+
+<main>
+  <div class="row">
+    <div class="col-lg-4 col-md-7 order-lg-1 order-sm-2 order-md-1 order-2 ">
+      <div class="main-title">
+        <h1>{{obj.main_title}}</h1>
+        <p>{{obj.main_descrription|safe}}</p>
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-5 main-img order-lg-2 order-sm-1 order-md-2 order-1">
+      <img src="{% static 'assets/img/clients/delivery.png' %}" alt="fly box" >
+    </div>
+  </div><!-- /.row -->
+  <div class="row" data-aos="fade-up" data-aos-duration="1000">
+    <div class="col-lg-7 col-md-5">
+      <img src="{% static 'assets/img/clients/food-delivery.png' %}" alt="women chose food" class="online-food">
+    </div><!-- /.col-md-7 -->
+    <div class="col-lg-5 col-md-7">
+      <div class="food-delivery">
+        <h2>{{obj.food_delivery }}</h2>
+        <p>{{obj.food_delivery_description|safe}}</p>
+      </div>
+    </div><!-- /.col-md-5 -->
+  </div><!-- /.row -->
+  <div class="track-order" data-aos="fade-up" data-aos-duration="1000">
+    <div class="row">
+      <div class="col-lg-5 col-md-7 order-lg-1 order-sm-2 order-md-1 order-2">
+        <h2>{{obj.track_order }}</h2>
+        <p>{{obj.track_order_description|safe}}</p>
+      </div><!-- /.col-md-5 -->
+      <div class="col-lg-7 col-md-5  order-lg-2 order-sm-1 order-md-2 order-1">
+        <img src="{% static 'assets/img/clients/track.png' %}" alt="delivery on map">
+      </div><!-- /.col-md-7 -->
+    </div><!-- /.row -->
+  </div><!-- /.track-order -->
+</main>

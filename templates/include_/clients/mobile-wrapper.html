@@ -1,0 +1,63 @@
+{% load staticfiles %}
+
+<div class="mobile-app" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row">
+        <div class="col-lg-7 col-md-5">
+          <img src="{% static 'assets/img/clients/iphone.png' %}" alt="iphone" class="iphone-img">
+        </div><!-- /.col-md-7 -->
+        <div class="col-lg-5 col-md-7">
+          <h2>{{obj.mobile_app }}</h2>
+          <img src="{% static "assets/img/clients/iphone.png" %}" alt="iphone" class="mob-img">
+          <a href="{{ link.playMarket }}" class="mob-img"><img src="{% static "assets/img/clients/google-play.png" %}" alt="Google Play button"></a>
+          <a href="{{ link.appStore }}" class="mob-img"><img src="{% static "assets/img/clients/app-store.png" %}" alt="App Store button"></a>
+          <p>{{obj.mobile_app_description|safe }}</p>
+          <a href="{{ link.playMarket }}"><img src="{% static "assets/img/clients/google-play.png" %}" alt="Google Play button"></a>
+          <a href="{{ link.appStore }}"><img src="{% static "assets/img/clients/app-store.png" %}" alt="App Store button"></a>
+        </div><!-- /.col-md-5 -->
+      </div><!-- /.row -->
+    </div><!-- /.mobile-app -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="range-title">
+          <h3>{{obj.range_title }}</h3>
+        </div>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="range-description">
+          <img src="{% static "assets/img/clients/medicine.png" %}" alt="pills">
+          <h5>{{obj.pills }}</h5>
+          <p>{{obj.pills_description|safe }} </p>
+        </div><!-- /.range-description -->
+      </div><!-- /.col-md-4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="range-description">
+          <img src="{% static "assets/img/clients/clothes.png" %}" alt="clothes">
+          <h5>{{obj.clothes}}</h5>
+          <p>{{obj.clothes_description|safe }}</p>
+        </div><!-- /.range-description -->
+      </div><!-- /.col-md-4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="range-description">
+          <img src="{% static "assets/img/clients/food.png" %}" alt="Food box">
+          <h5>{{obj.food_box }}</h5>
+          <p>{{obj.food_box_description|safe }}</p>
+        </div><!-- /.range-description -->
+      </div><!-- /.col-md-4 -->
+      <div class="col-lg-6 col-md-6">
+        <div class="dishes-block">
+          <img src="{% static "assets/img/clients/dishes.png" %}" alt="dishes">
+          <h5>{{obj.dishes }}</h5>
+          <p>{{obj.dishes_description|safe }}</p>
+        </div><!-- /.range-description -->
+      </div><!-- /.col-md-6 -->
+      <div class="col-lg-6 col-md-12">
+        <div class="taxi-block">
+          <img src="{% static "assets/img/clients/taxi.png" %}" alt="Taxi">
+          <h5>{{obj.taxi}}</h5>
+          <p>{{obj.taxi_description|safe }}</p>
+        </div><!-- /.range-description -->
+      </div><!-- /.col-md-6 -->
+    </div><!-- /.row -->
+  </div>

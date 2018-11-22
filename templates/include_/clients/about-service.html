@@ -1,0 +1,92 @@
+{%load staticfiles%}
+<div class="about-servise desktop-mob">
+  <div class="row" data-aos="fade-up" data-aos-duration="1000">
+    <div class="col-lg-6">
+      <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/hourglass.png" %}" alt="Blue Hourglass">
+        <h6>{{obj.about_first }}</h6>
+        <p>{{obj.about_first_description|safe }}</p>
+      </div><!-- /.about-servise_block -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/watch.png" %}" alt="Blue Watch" class="watch">
+        <h6>{{obj.about_second }}</h6>
+        <p>{{obj.about_second_description|safe}}</p>
+      </div><!-- /.about-servise_block -->
+    </div><!-- /.col-lg-6 -->
+  </div><!-- /.row -->
+  <div class="row" data-aos="fade-up" data-aos-duration="1000">
+    <div class="col-lg-6">
+      <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/cash.png" %}" alt="Hand give cash">
+        <h6>{{obj.about_third }}</h6>
+        <p>{{obj.about_third_description|safe}}</p>
+      </div><!-- /.about-servise_block -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/heart.png" %}" alt="Hand click on heart" class="watch">
+        <h6> {{obj.about_four}}</h6>
+        <p>{{obj.about_four_description|safe }}</p>
+      </div><!-- /.about-servise_block -->
+    </div><!-- /.col-lg-6 -->
+  </div><!-- /.row -->
+  <div class="row" data-aos="fade-up" data-aos-duration="1000">
+    <div class="col-lg-6">
+      <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/qr.png" %}" alt="Qr code on smartphone">
+        <h6>{{obj.about_five }}</h6>
+        <p>{{obj.about_five_description|safe }}</p>
+      </div><!-- /.about-servise_block -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/truck.png" %}" alt="Truck delivery" class="watch-last">
+        <h6> {{obj.about_six }}</h6>
+        <p>{{obj.about_six_description|safe}}</p>
+      </div><!-- /.about-servise_block -->
+    </div><!-- /.col-lg-6 -->
+  </div><!-- /.row -->
+</div><!-- /.about-servise -->
+
+<div class="row">
+  <div class="mobile-slider">
+    <div class="directions-block">
+      <div class="first-slide">
+        <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/hourglass.png" %}" alt="Blue Hourglass">
+        <h6>{{obj.about_first }}</h6>
+        <p>{{obj.food_delivery_description|safe }}</p>
+        </div><!-- /.about-servise_block -->
+        <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/watch.png" %}" alt="Blue Watch" class="watch">
+        <h6>{{obj.about_second }}</h6>
+        <p>{{obj.about_second_description|safe}}</p>
+        </div><!-- /.about-servise_block -->
+        <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/cash.png" %}" alt="Hand give cash">
+        <h6> {{obj.about_third }}</h6>
+        <p>{{obj.about_third_description|safe}}</p>
+        </div><!-- /.about-servise_block -->
+      </div><!-- /.first-slide -->
+      <div class="second-slide">
+        <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/heart.png" %}" alt="Hand click on heart" class="watch">
+        <h6>{{obj.about_four}}</h6>
+        <p>{{obj.about_four_description|safe }}</p>
+        </div><!-- /.about-servise_block -->
+        <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/qr.png" %}" alt="Qr code on smartphone">
+        <h6>{{obj.about_five }}</h6>
+        <p>{{obj.about_five_description|safe }} </p>
+        </div><!-- /.about-servise_block -->
+        <div class="about-servise_block">
+        <img src="{% static "assets/img/clients/truck.png" %}" alt="Truck delivery" class="watch-last">
+        <h6>{{obj.about_six }}</h6>
+        <p>{{obj.about_six_description}}</p>
+        </div><!-- /.about-servise_block -->
+      </div><!-- /.second-slide -->
+    </div><!-- /.directions-block -->
+  </div><!-- /.mobile-slider -->
+</div>

@@ -1,18 +1,19 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from app import views
 
 urlpatterns = [
+    path('summernote/', include('django_summernote.urls')),
     path('admin/', admin.site.urls),
     path('', views.main),
-    path('drivers-rtl', views.drivers_rtl),
-    path('drivers-ru', views.drivers_ru),
-    path('drivers', views.drivers),
-    path('clients-rtl', views.client_rtl),
-    path('clients-ru', views.client_ru),
-    path('clients', views.client, name='clients'),
+    # path('drivers-rtl', views.drivers_rtl, name='drivers-rtl'),
+    # path('drivers-ru', views.drivers_ru, name='drivers-ru'),
+    path('drivers/<str:lang>', views.drivers, name="drivers"),
+    # path('clients-rtl', views.client_rtl, name='clients-rtl'),
+    # path('clients-ru', views.client_ru, name='clients-ru'),
+    path('clients/<str:lang>', views.clients, name='clients'),
 
     path('registration/first-step-rtl', views.reg_first_rtl),
     path('registration/first-step-ru', views.reg_first_ru),

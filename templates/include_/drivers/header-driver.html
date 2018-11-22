@@ -1,31 +1,37 @@
 {% load staticfiles %}
+
 <header>
-  <div class="row desktop-mob_header">
-    <div class="col-md-4 col-lg-2">
+  <div class="row desktop-mob">
+    <div class="col-md-2 col-lg-2">
       <div class="logo-text">
       <a href="{% url logo_url %}"><img src="{% static 'assets/img/logo-test.png' %}" alt="logo" ></a>
       </div>
     </div><!-- /.col-md-3 -->
     <div class="col-md-3">
       <div class="clients-page">
-        <p><a href="{% url 'clients' %}">For clients</a></p>
+        <p><a href="clients">For clients</a></p>
       </div>
     </div><!-- /.col-md-2 -->
     <div class="col-md-3">
       <div class="drivers-page">
-        <p><a href="{% url 'drivers' %}">For drivers</a></p>
+        <p><a href="drivers">For drivers</a></p>
       </div>
     </div><!-- /.col-md-3 -->
-    <div class="col-md-2 col-lg-3">
+    <div class="col-md-3">
+      <div class="register">
+        <p><a href="registration/first-step">Register as driver</a></p>
+      </div>
+    </div><!-- /.col-md-2 -->
+    <div class="col-md-1">
       <div class="languages">
-          {% include 'include/languages.html'%}
+        {% include 'include/languages.html'%}
       </div>
     </div><!-- /.col-md-4 -->
   </div><!-- /.row -->
   <div class="row mobile">
     <div class="col-6">
       <div class="logo-text">
-        <p><a href="/">Pick2Me</a></p>
+        <p><a href="drivers">Pick2Me</a></p>
       </div>
     </div><!-- /.col-xs-6 -->
     <div class="col-6">
@@ -43,8 +49,9 @@
         </div>
         <div class="mob-menu_nav">
           <ul>
-            <li><a href="clients">For clients</a></li>
-            <li><a href="drivers">For drivers</a></li>
+            <li><a href="{%url 'clients'%}">For clients</a></li>
+            <li><a href="{% url 'drivers'%}">For drivers</a></li>
+            <li><a href="registration/first-step">Register as driver</a></li>
           </ul>
         </div>
         <div class="mob-menu_languages">
