@@ -45,19 +45,29 @@ def main(request):
 
 
 def drivers(request, lang):
-
+    try:
+        obj = ContentDrivers.objects.get(lang=lang)
+    except:
+        obj = ""
     logo_url = 'drivers'
-    first={'url':'drivers-ru', 'name':"Русский"}
-    second = {'url':'drivers-rtl', 'name':"Arabian"}
-    return render(request, "drivers_new.html", {"link" : Links.objects.get(name="driver"), 'first':first, 'second':second,'logo_url':logo_url})
+    lang = lang
+    if lang=='en':
+        first = {'url':logo_url, 'lang':'ru', 'name':"Русский"}
+        second = {'url':logo_url,'lang':'rtl', 'name':"Arabian"}
+        clients = {'url':'clients', 'name':"For clients"}
+        drivers = {'url':'drivers', 'name':"For drivers"}
+    elif lang == 'ru':
+        first = {'url':logo_url, 'lang':'en', 'name':"English"}
+        second = {'url':logo_url, 'lang':'rtl', 'name':"Arabian"}
+        clients = {'url':'clients', 'name':"Для клиентов"}
+        drivers = {'url':'drivers', 'name':"Для водителей"}
+    elif lang == 'rtl':
+        first = {'url':logo_url, 'lang':'en', 'name':"English"}
+        second = {'url':logo_url, 'lang':'ru', 'name':"Русский"}
+    return render(request, "drivers.html", {"link" : Links.objects.get(name="client"),'first':first, 'second':second, 'logo_url':logo_url, 'obj':obj, 'clients':clients, 'drivers':drivers, 'lang':lang})
 
 
-def drivers_rtl(request):
-    return render(request, "drivers-rtl.html", {"link" : Links.objects.get(name="driver")})
 
-
-def drivers_ru(request):
-    return render(request, "drivers-ru.html", {"link" : Links.objects.get(name="driver")})
 
 
 def clients(request, lang):
@@ -79,6 +89,13 @@ def clients(request, lang):
         second = {'url':'clients', 'lang':'ru', 'name':"Русский"}
     return render(request, "clients.html", {"link" : Links.objects.get(name="client"),'first':first, 'second':second, 'logo_url':logo_url, 'obj':obj, 'clients':clients, 'drivers':drivers, 'lang':lang})
 
+
+def drivers_rtl(request):
+    return render(request, "drivers-rtl.html", {"link" : Links.objects.get(name="driver")})
+
+
+def drivers_ru(request):
+    return render(request, "drivers-ru.html", {"link" : Links.objects.get(name="driver")})
 
 def client_rtl(request):
     return render(request, "clients-rtl.html", {"link" : Links.objects.get(name="client")})

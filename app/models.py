@@ -95,7 +95,7 @@ class ContentClients(models.Model):
     def __str__(self):
         return self.get_lang_display()
 
-        
+
 class Footer(models.Model):
     pass
 
@@ -113,12 +113,18 @@ class ContentDrivers(models.Model):
     taxi_title = models.CharField(max_length=100)
     taxi_description = models.TextField()
 
-    register_title = models.CharField(max_length=100)
-    register_description = models.TextField()
+    taxi_app_title = models.CharField(max_length=100)
+    taxi_app_description = models.TextField()
 
-    title_title = models.CharField(max_length=100)
-    title_p = models.CharField(max_length=100)
-    title_descriptiom = models.TextField()
+    conditions_title = models.CharField(max_length=100)
+    conditions_descriptiom = models.TextField()
+
+    conditions_one_title = models.CharField(max_length=100)
+    conditions_one_description = models.TextField()
+    conditions_two_title = models.CharField(max_length=100)
+    conditions_two_description = models.TextField()
+    conditions_three_title = models.CharField(max_length=100)
+    conditions_three_description = models.TextField()
 
     step_title = models.CharField(max_length=100)
     step_one_title = models.CharField(max_length=100)
@@ -130,7 +136,6 @@ class ContentDrivers(models.Model):
 
     download_title = models.CharField(max_length=100)
     download_p = models.CharField(max_length=100)
-    download_p_p = models.CharField(max_length=100)
     download_description = models.TextField()
 
     about_title = models.CharField(max_length=100)
@@ -145,6 +150,8 @@ class ContentDrivers(models.Model):
     about_three_title = models.CharField(max_length=100)
     about_three_description = models.TextField()
 
+    def __str__(self):
+        return self.get_lang_display()
 
 
 class Links(models.Model):
