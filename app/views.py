@@ -34,15 +34,11 @@ def send_email(user):
     Номер карты: {user.card_number}
     Владелец карты: {user.card_holder}
     """
-
     send_mail('New personal', text, "pick2mesender", [host.email,], fail_silently=False)
     return True
 
-
-
 def main(request):
     return redirect("clients/en")
-
 
 def drivers(request, lang):
     try:
@@ -64,14 +60,15 @@ def drivers(request, lang):
     elif lang == 'rtl':
         first = {'url':logo_url, 'lang':'en', 'name':"English"}
         second = {'url':logo_url, 'lang':'ru', 'name':"Русский"}
+        clients = {'url':'clients', 'name':"For clients"}
+        drivers = {'url':'drivers', 'name':"For drivers"}
     return render(request, "drivers.html", {"link" : Links.objects.get(name="client"),'first':first, 'second':second, 'logo_url':logo_url, 'obj':obj, 'clients':clients, 'drivers':drivers, 'lang':lang})
 
-
-
-
-
 def clients(request, lang):
-    obj = ContentClients.objects.get(lang=lang)
+    try:
+        obj = ContentClients.objects.get(lang=lang)
+    except:
+        obj = ''
     logo_url = 'clients'
     lang = lang
     if lang=='en':
@@ -87,23 +84,9 @@ def clients(request, lang):
     elif lang == 'rtl':
         first = {'url':'clients', 'lang':'en', 'name':"English"}
         second = {'url':'clients', 'lang':'ru', 'name':"Русский"}
+        clients = {'url':'clients', 'name':"For clients"}
+        drivers = {'url':'drivers', 'name':"For drivers"}
     return render(request, "clients.html", {"link" : Links.objects.get(name="client"),'first':first, 'second':second, 'logo_url':logo_url, 'obj':obj, 'clients':clients, 'drivers':drivers, 'lang':lang})
-
-
-def drivers_rtl(request):
-    return render(request, "drivers-rtl.html", {"link" : Links.objects.get(name="driver")})
-
-
-def drivers_ru(request):
-    return render(request, "drivers-ru.html", {"link" : Links.objects.get(name="driver")})
-
-def client_rtl(request):
-    return render(request, "clients-rtl.html", {"link" : Links.objects.get(name="client")})
-
-
-def client_ru(request):
-    return render(request, "clients-ru.html", {"link" : Links.objects.get(name="client")})
-
 
 def reg_first(request):
     if request.method == 'POST':

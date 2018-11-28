@@ -115,7 +115,7 @@ color:#fff; }
       margin-left: 50px; }
 
 .taxi-app {
-  margin-top: 250px; }
+  margin-top: 50px; }
   .taxi-app_image {
     position: relative; }
     .taxi-app_image img {
@@ -151,7 +151,7 @@ color:#fff; }
   font-size: 24px; }
 
 .conditions {
-  margin-top: 150px;
+  margin-top: 50px;
   color: #4a4a4a; }
 
 .title {
@@ -180,20 +180,20 @@ color:#fff; }
     font-size: 18px; }
 
 .manual {
-  margin-top: 130px; }
+  margin-top: 50px; }
   .manual-title {
     width: 100%;
     color: #000;
     font-family: "Avenir-Medium";
     text-align: center;
-    margin-bottom: 57px; }
+    margin-bottom: 32px; }
     .manual-title h3 {
       font-size: 36px; }
   .manual-steps h4 {
     font-family: "Avenir-Medium";
     color: #000;
     font-size: 24px;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
     margin-left: 55px; }
   .manual-steps p {
     font-family: "Avenir-Regular";
@@ -201,6 +201,7 @@ color:#fff; }
     font-size: 18px;
     margin-left: 55px;
     margin-bottom: 10px;
+    height: 100px;
     max-width: 238px; }
   .manual-steps img {
     max-width: 90%; }
@@ -237,7 +238,8 @@ color:#fff; }
   margin-top: 49px;
   font-family: "Avenir-Medium";
   color: #fff;
-  font-size: 36px; }
+  font-size: 36px;
+  text-align: center;}
 
 .download-info b {
   color: #45b2f4; }
