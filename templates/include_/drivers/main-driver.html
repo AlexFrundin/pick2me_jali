@@ -10,7 +10,7 @@
       <div class="col-md-7 col-lg-5">
         <div class="taxi-description">
           <h2>{{obj.taxi_title|safe}}</h2>
-          <p>{{obj.taxi_description|safe}} </p>
+          {{obj.taxi_description|safe}}
           <a href="{{ link.appStore }}"><img src="{% static "assets/img/drivers/appstore-black.png" %}" alt="app store icon"></a>
           <a href="{{ link.playMarket }}"><img src="{% static "assets/img/drivers/googleplay-black.png" %}" alt="google play icon"></a>
         </div><!-- /.app-description -->

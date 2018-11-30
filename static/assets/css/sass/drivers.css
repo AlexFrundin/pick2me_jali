@@ -108,7 +108,8 @@ color:#fff; }
   .taxi-description p {
     font-family: "Avenir-Regular";
     font-size: 18px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+      height: 160px;}
   .taxi-description a {
     float: left; }
     .taxi-description a:nth-of-type(2) {
@@ -156,7 +157,7 @@ color:#fff; }
 
 .title {
   text-align: center;
-  margin-bottom: 60px; }
+  margin-bottom: 40px; }
   .title h3 {
     font-family: "Avenir-Medium";
     font-size: 36px;
@@ -186,15 +187,16 @@ color:#fff; }
     color: #000;
     font-family: "Avenir-Medium";
     text-align: center;
-    margin-bottom: 32px; }
+    margin-bottom: 40px; }
     .manual-title h3 {
       font-size: 36px; }
   .manual-steps h4 {
     font-family: "Avenir-Medium";
     color: #000;
     font-size: 24px;
+    margin-left:25%;
     margin-bottom: 12px;
-    margin-left: 55px; }
+     }
   .manual-steps p {
     font-family: "Avenir-Regular";
     color: #4a4a4a;
