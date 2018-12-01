@@ -57,7 +57,10 @@
     .delivery-bg:after {
       content: ''; }
   .main-title {
-    margin-bottom: 100px; }
+    margin-bottom: 0; }
+    .main-title h2{
+      margin-top: 0;
+    }
     .main-title p {
       margin-top: 10px;
       font-size: 16px; }
@@ -153,6 +156,11 @@
     margin: 0 auto 30px; }
     .about-servise_block p {
       max-width: 556px; }
+      .about-servise_block img {
+        float: left;
+        margin-right: 33px;
+        padding-top: 12px;
+        padding-bottom: 0; }
   .watch {
     margin-right: 21px !important; }
     .watch-last {
@@ -426,7 +434,7 @@
       font-size: 18px; }
     .about-servise_block img {
       padding-top: 5px;
-      padding-bottom: 130px; }
+      /* padding-bottom: 130px; } */
     .about-servise_block p {
       font-size: 16px; }
   .languages-content {

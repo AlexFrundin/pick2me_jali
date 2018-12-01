@@ -4,10 +4,18 @@ body {
 
 header {
   color: #4a4a4a; }
-span {
-  font-family: "Avenir-Regular" !important;
-  font-size: 14px !important;
-}
+
+  span {
+      font-family: "Avenir-Regular" !important;
+      font-size: 18px !important;
+      text-align: justify;
+    }
+    p{
+      font-family: "Avenir-Regular" !important;
+      font-size: 18px !important;
+      text-align: justify;
+    }
+
   .header-background-color{
       background-color: #000000;
     }
@@ -28,24 +36,38 @@ span {
 .clients-page {
   font-family: "Avenir-Regular" !important;
   margin-top: 25px;
+  margin-bottom: 25px;
   text-align: right; }
-  .clients-page a {
-    font-size: 24px;
+
+.clients-page a {
+  font-size: 24px;
   color:#fff; }
+
+.clients-page p {
+  max-width: 193px;
+}
 
 .drivers-page {
   font-family: "Avenir-Regular" !important;
-  text-align: center; }
-  .drivers-page p {
-    max-width: 193px;
-    /* background-image: -webkit-gradient(linear, left bottom, left top, from(#fda889), to(#fcd96e));
-    background-image: linear-gradient(to top, #fda889 0%, #fcd96e 100%); */
-    padding: 25px 0;
-    font-size: 24px;
-    color: #FCD96E; }
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: right;
+}
+.drivers-page a {
+  font-size: 24px;
+  color: #FCD96E;
+}
+
+.drivers-page p {
+  max-width: 193px;
+}
 
 .register {
-  margin-top: 23px; }
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left:-10%;
+}
+
   .register a {
     color: #3eb1fd;
     font-family: "Avenir-Medium" !important;
@@ -193,34 +215,35 @@ color:#fff; }
     margin-bottom: 40px; }
     .manual-title h3 {
       font-size: 36px; }
+
+.manual-steps {
+  text-align: center;
+}
   .manual-steps h4 {
     font-family: "Avenir-Medium" !important;
     color: #000;
     font-size: 24px;
-    margin-left:25%;
     margin-bottom: 12px;
      }
   .manual-steps p {
-    font-family: "Avenir-Regular" !important;
-    color: #4a4a4a;
-    font-size: 18px;
-    margin-left: 55px;
-    margin-bottom: 10px;
+    max-width: 335px;
+    text-align: justify;
     height: 100px;
-    max-width: 238px; }
+  margin-bottom: 10px;}
   .manual-steps img {
-    max-width: 90%; }
+    max-width: 90%;
+     }
 
 .manual-steps_mobile {
   max-width: 370px;
-  margin: 0 auto; }
+  margin: 0 auto;}
   .manual-steps_mobile h4 {
     font-family: "Avenir-Medium" !important;
     color: #000;
     font-size: 24px;
     text-align: left;
     margin-bottom: 22px;
-    margin-left: 65px; }
+    margin-left: 20%; }
   .manual-steps_mobile p {
     max-width: 240px;
     text-align: left;
@@ -230,7 +253,8 @@ color:#fff; }
     margin-left: 65px;
     margin-bottom: 10px; }
   .manual-steps_mobile img {
-    max-width: 90%; }
+    max-width: 90%;
+    margin-left: 18%}
 
 .download-wrapper {
   margin-top: 150px;
@@ -292,13 +316,13 @@ color:#fff; }
       font-family: "Avenir-Regular" !important;
       font-size: 20px; }
   .support-blocks {
-    color: #4a4a4a;
-    text-align: center; }
+    color: #4a4a4a; }
     .support-blocks img {
       margin: 0 auto 23px; }
     .support-blocks h6 {
       font-family: "Avenir-Medium" !important;
       font-size: 24px;
+      text-align: center;
       margin-bottom: 21px; }
     .support-blocks p {
       max-width: 335px;

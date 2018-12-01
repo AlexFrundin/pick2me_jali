@@ -5,7 +5,7 @@
       <div class="col-md-12">
         <div class="support-title">
           <h3>{{obj.about_title|safe}}</h3>
-          <p>{{obj.about_p|safe}}</p>
+          {{obj.about_p|safe}}
         </div>
       </div><!-- /.col-md-12 -->
     </div>
@@ -15,21 +15,21 @@
         <div class="support-blocks">
           <img src="{% static "assets/img/drivers/headphones.png" %}" alt="headphones">
           <h6>{{obj.about_one_title|safe}}</h6>
-          <p>{{obj.about_one_description|safe}}</p>
+          {{obj.about_one_description|safe}}
         </div><!-- /.support-blocks -->
       </div><!-- /.col-md-4 -->
       <div class="col-lg-4 col-md-6">
         <div class="support-blocks">
           <img src="{% static "assets/img/drivers/monitor.png" %}" alt="monitor">
           <h6>{{obj.about_two_title|safe}}</h6>
-          <p>{{obj.about_two_description|safe}}</p>
+          {{obj.about_two_description|safe}}
         </div><!-- /.support-blocks -->
       </div><!-- /.col-md-4 -->
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6">
         <div class="support-blocks">
           <img src="{% static "assets/img/drivers/protection.png" %}" alt="protection shild">
           <h6>{{obj.about_three_title|safe}}</h6>
-          <p>{{obj.about_three_description | safe }}</p>
+          {{obj.about_three_description | safe }}
         </div><!-- /.support-blocks -->
       </div><!-- /.col-md-4 -->
     </div><!-- /.row -->

@@ -147,9 +147,9 @@
     font-size: 24px; }
   .manual-steps_mobile h4 {
     font-size: 18px;
-    margin-left: 35px; }
+    margin-left: 34%; }
   .manual-steps_mobile p {
-    margin-left: 35px;
+    margin-left: 25%;
     font-size: 14px;
     max-width: 170px; }
   .manual-steps_mobile img {
@@ -159,7 +159,7 @@
     .download-info h3 {
       font-size: 24px; }
     .download-info a {
-      margin: 40px auto; }
+      margin: 40px auto !important; }
   .car-phone {
     margin-top: -80px; }
     .car-phone img {
@@ -170,7 +170,7 @@
   .support-blocks h6 {
     font-size: 18px; }
   .support-blocks p {
-    text-align: center;
+    /* text-align: center; */
     font-size: 16px; }
   .footer-logo {
     text-align: center; }

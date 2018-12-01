@@ -1,22 +1,22 @@
 {% load staticfiles %}
 <header>
   <div class="row desktop-mob_header">
-    <div class="col-md-4 col-lg-2">
+    <div class="col-md-3 col-lg-2">
       <div class="logo-text">
         <a href="{% url logo_url lang=lang %}"><img src="{% static 'assets/img/logo-test.png' %}" alt="logo" ></a>
       </div>
     </div><!-- /.col-md-3 -->
-    <div class="col-md-3">
+    <div class="col-md-3 col-lg-3">
       <div class="clients-page">
         <p><a href="{% url clients.url lang=lang %}">{{clients.name}}</a></p>
       </div>
     </div><!-- /.col-md-2 -->
-    <div class="col-md-3">
+    <div class="col-md-3 col-lg-3">
       <div class="drivers-page">
         <p><a href="{% url drivers.url lang=lang %}">{{drivers.name}}</a></p>
       </div>
     </div><!-- /.col-md-3 -->
-    <div class="col-md-2 col-lg-3">
+    <div class="col-md-3 col-lg-3">
       <div class="languages">
           {% include 'include_/languages.html'%}
       </div>
